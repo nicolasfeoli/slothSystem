@@ -1,0 +1,91 @@
+﻿:root{
+    --main-bg-color: #101438;
+    --gray-bg-color: #DDDDDD;
+}
+
+.line{    
+    width: 82%;   
+    border-bottom: 0.2em solid var(--main-bg-color);
+    position: absolute;
+    margin: 0 16%;
+}
+
+#menuBox {    
+    width: 14%;    
+    border-top: 0.1em solid var(--main-bg-color);
+    border-right: 0.1em solid var(--main-bg-color);
+    border-bottom: none;
+    position: absolute;
+    margin: auto 1%;
+}
+
+#tittleLogo {
+    display: inline;    
+    margin: auto 22%;
+}
+
+#imageLogo {
+    width: 4%;
+}
+
+#Label1 {
+    color: var(--main-bg-color);
+    font-family: 'Krona One', serif;
+    font-size: 2em;
+}
+
+#btnLogOut {
+    background-color: white;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    float: right;
+    margin-right: 2%;
+    border: solid var(--main-bg-color);
+    border-radius: 0.5em;
+}
+
+#btnOptions {
+    background-color: white;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    float: right;    
+    border-bottom: 0.1em solid var(--main-bg-color);    
+    border-left: 0.1em solid var(--main-bg-color);    
+    border-radius: 0;
+}
+
+#btn {
+    background-color: white;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    float: right;        
+}
+
+footer {
+    position:fixed;
+    bottom:0;    
+    width: 97%;
+    margin: 0 1%; 
+}
+
+#upperFooterDiv {
+    background-color: var(--gray-bg-color);        
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+#lowerFooterDiv{
+    background-color: var(--main-bg-color);
+    color: white;    
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
+
+#btnFooter {
+    color: var(--main-bg-color);
+    font-weight: bold;
+    float: right;
+    margin-right: 2%;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+}

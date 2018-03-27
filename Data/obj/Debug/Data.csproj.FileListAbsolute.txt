@@ -1,0 +1,14 @@
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\bin\Debug\Data.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\bin\Debug\Data.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\bin\Debug\Domain.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\bin\Debug\Domain.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\obj\Debug\Data.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Data\obj\Debug\Data.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Data.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Domain.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Domain.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.pdb

@@ -1,0 +1,40 @@
+﻿:root{
+    --main-bg-color: #101438;
+}
+
+#imageLogo {
+    width: 5%;
+}
+
+#Label1 {
+    font-family: 'Krona One', serif;
+    font-size: 2em;
+    color: white;
+}
+
+#headerTittle {
+    background-color: var(--main-bg-color);    
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 10% auto;
+}
+
+.form-group{    
+    width: 15%;
+    margin: 0 auto;
+}
+
+.form-group label{
+      color: var(--main-bg-color);
+      font-family: 'Krona One', serif;
+}
+
+[type=submit]{
+    background-color: var(--main-bg-color);
+    color: white;    
+}
+
+div{
+    text-align: center;   
+}
