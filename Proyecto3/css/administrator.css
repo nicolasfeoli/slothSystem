@@ -61,6 +61,10 @@
     float: right;        
 }
 
+#btn:hover {
+    background-color: var(--gray-bg-color);
+}
+
 footer {
     position:fixed;
     bottom:0;    
