@@ -93,3 +93,25 @@ footer {
     border: 0.1em solid black;
     border-radius: 0.5em;
 }
+
+#ContentDiv1 {
+    width: 84%;
+    margin: 0 18%;        
+    text-align: center;
+}
+
+#breadcrumbs{
+    width: 82%; 
+    margin: 0 16%; 
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+#linkNew {
+    color: var(--main-bg-color);
+    float: left;
+    font-weight: bold;
+    text-decoration: underline;
+}

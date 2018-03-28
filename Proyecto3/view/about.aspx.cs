@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Util;
 
-namespace Proyecto3
+namespace Proyecto3.view
 {
-    public partial class AdministratorPrincipal : System.Web.UI.MasterPage
+    public partial class about : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

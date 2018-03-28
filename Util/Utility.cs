@@ -11,11 +11,18 @@ namespace Util
     public class Utility
     {
         public static string connectionString = WebConfigurationManager.ConnectionStrings["db_gestion_estudiantil_b56246"].ToString();
-        public static string userAuthenticated = "UserAuthentication";
-        public static string userRole = "UserRole";
-        public static int adminRole = 1;
-        public static int analystRole = 2;
-        public static string administratorPrincipalPage = "view/administrator.aspx";
-        public static string analystPrincipalPage = "view/analyst.aspx";
+        public static string USER_AUTHENTICATED = "UserAuthentication";
+        public static string USER_ROLE = "UserRole";
+        public static int ADMIN_ROLE = 1;
+        public static int ANALYST_ROLE = 2;
+        public static string ADMINISTRATOR_PRINCIPAL_PAGE = "view/administrator.aspx";
+        public static string ANALYST_PRINCIPAL_PAGE = "view/analyst.aspx";
+
+        public static string PROJECTS_PAGE = "/view/projects.aspx";
+        public static string ANALYST_PAGE = "/view/projects.aspx";
+        public static string COLLABORATOR_PAGE = "/view/projects.aspx";
+        public static string OPERATIONS_PAGE = "/view/projects.aspx";
+        public static string TASKS_PAGE = "/view/projects.aspx";
+        public static string WORKING_HOURS_PAGE = "/view/projects.aspx";
     }
 }

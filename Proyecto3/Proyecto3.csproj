@@ -168,8 +168,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\administrator.css" />
+    <Content Include="view\about.aspx" />
     <Content Include="view\administrator.aspx" />
-    <Content Include="view\analyst.aspx" />
+    <Content Include="view\analystView.aspx" />
+    <Content Include="view\collaborator.aspx" />
+    <Content Include="view\newProject.aspx" />
+    <Content Include="view\operation.aspx" />
+    <Content Include="view\project.aspx" />
+    <Content Include="view\task.aspx" />
+    <Content Include="view\userGuide.aspx" />
+    <Content Include="view\workingHours.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +203,13 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view\about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\administrator.aspx.cs">
       <DependentUpon>administrator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,12 +217,61 @@
     <Compile Include="view\administrator.aspx.designer.cs">
       <DependentUpon>administrator.aspx</DependentUpon>
     </Compile>
-    <Compile Include="view\analyst.aspx.cs">
-      <DependentUpon>analyst.aspx</DependentUpon>
+    <Compile Include="view\analystView.aspx.cs">
+      <DependentUpon>analystView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="view\analyst.aspx.designer.cs">
-      <DependentUpon>analyst.aspx</DependentUpon>
+    <Compile Include="view\analystView.aspx.designer.cs">
+      <DependentUpon>analystView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\collaborator.aspx.cs">
+      <DependentUpon>collaborator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\collaborator.aspx.designer.cs">
+      <DependentUpon>collaborator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\newProject.aspx.cs">
+      <DependentUpon>newProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newProject.aspx.designer.cs">
+      <DependentUpon>newProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\operation.aspx.cs">
+      <DependentUpon>operation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\operation.aspx.designer.cs">
+      <DependentUpon>operation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\project.aspx.cs">
+      <DependentUpon>project.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\project.aspx.designer.cs">
+      <DependentUpon>project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\task.aspx.cs">
+      <DependentUpon>task.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\task.aspx.designer.cs">
+      <DependentUpon>task.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\userGuide.aspx.cs">
+      <DependentUpon>userGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\userGuide.aspx.designer.cs">
+      <DependentUpon>userGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\workingHours.aspx.cs">
+      <DependentUpon>workingHours.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\workingHours.aspx.designer.cs">
+      <DependentUpon>workingHours.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

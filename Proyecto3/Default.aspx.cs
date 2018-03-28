@@ -15,15 +15,15 @@ namespace Proyecto3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session[Utility.userAuthenticated] = 1;
-            Session[Utility.userRole] = 2;
-            if (Session[Utility.userAuthenticated] != null) {
-                if ((int)Session[Utility.userRole] == Utility.adminRole)
+            Session[Utility.USER_AUTHENTICATED] = 1;
+            Session[Utility.USER_ROLE] = 1;
+            if (Session[Utility.USER_AUTHENTICATED] != null) {
+                if ((int)Session[Utility.USER_ROLE] == Utility.ADMIN_ROLE)
                 {
-                    Response.Redirect(Utility.administratorPrincipalPage);
-                } else if ((int)Session[Utility.userRole] == Utility.analystRole)
+                    Response.Redirect(Utility.ADMINISTRATOR_PRINCIPAL_PAGE);
+                } else if ((int)Session[Utility.USER_ROLE] == Utility.ANALYST_ROLE)
                 {
-                    Response.Redirect(Utility.analystPrincipalPage);
+                    Response.Redirect(Utility.ANALYST_PRINCIPAL_PAGE);
                 }                
             }
         }

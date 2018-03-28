@@ -11,7 +11,7 @@ namespace Proyecto3.view
 {
 
 
-    public partial class analyst
+    public partial class operation
     {
     }
 }
