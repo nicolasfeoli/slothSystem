@@ -1,11 +1,7 @@
 ﻿:root{
     --main-bg-color: #101438;
     --gray-bg-color: #DDDDDD;
-<<<<<<< HEAD
     --orange-color: #E9630A;
-=======
-
->>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
 }
 
 .line{    
@@ -102,11 +98,7 @@ footer {
 #ContentDiv1 {
     width: 82%;
     margin: auto 16%;        
-<<<<<<< HEAD
     text-align: center;     
-=======
-    text-align: center;
->>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
 }
 
 #breadcrumbs{
@@ -124,7 +116,6 @@ a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
-<<<<<<< HEAD
 
 #divForm {
     display: inline-block;
@@ -170,7 +161,6 @@ a:hover {
     border: none;    
     border-radius: 0.2em;
 }
-=======
 .buttonOpen {
     background-color: var(--main-bg-color);
     color: white;
@@ -181,4 +171,17 @@ a:hover {
     font-size : small;
     border: none;
 }
->>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
+
+.btnAdd{
+    background-color: white;
+    border: none;
+    color: green;
+    font-weight: bold;    
+}
+
+.btnRemove{
+    background-color: white;
+    border: none;
+    color: red; 
+    font-weight: bold;   
+}

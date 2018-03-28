@@ -79,11 +79,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-<<<<<<< HEAD
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-=======
-    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
->>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -180,6 +176,7 @@
     <Content Include="view\asignAnalyst.aspx" />
     <Content Include="view\collaborator.aspx" />
     <Content Include="view\newAnalyst.aspx" />
+    <Content Include="view\newCollaborator.aspx" />
     <Content Include="view\newOperation.aspx" />
     <Content Include="view\newProject.aspx" />
     <Content Include="view\newTask.aspx" />
@@ -254,6 +251,13 @@
     </Compile>
     <Compile Include="view\newAnalyst.aspx.designer.cs">
       <DependentUpon>newAnalyst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\newCollaborator.aspx.cs">
+      <DependentUpon>newCollaborator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newCollaborator.aspx.designer.cs">
+      <DependentUpon>newCollaborator.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\newOperation.aspx.cs">
       <DependentUpon>newOperation.aspx</DependentUpon>
