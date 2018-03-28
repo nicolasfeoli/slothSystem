@@ -9,3 +9,9 @@ C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Domain\bin\Deb
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Domain\obj\Debug\Domain.dll
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Domain\obj\Debug\Domain.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\bin\Debug\Domain.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\bin\Debug\Domain.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\obj\Debug\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\obj\Debug\Domain.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Domain\obj\Debug\Domain.pdb

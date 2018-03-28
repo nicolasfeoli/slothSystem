@@ -1,7 +1,11 @@
 ﻿:root{
     --main-bg-color: #101438;
     --gray-bg-color: #DDDDDD;
+<<<<<<< HEAD
     --orange-color: #E9630A;
+=======
+
+>>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
 }
 
 .line{    
@@ -98,7 +102,11 @@ footer {
 #ContentDiv1 {
     width: 82%;
     margin: auto 16%;        
+<<<<<<< HEAD
     text-align: center;     
+=======
+    text-align: center;
+>>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337
 }
 
 #breadcrumbs{
@@ -116,6 +124,7 @@ a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+<<<<<<< HEAD
 
 #divForm {
     display: inline-block;
@@ -161,3 +170,15 @@ a:hover {
     border: none;    
     border-radius: 0.2em;
 }
+=======
+.buttonOpen {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: bold;
+    padding : 0.5em;
+    border-radius: 0.4em;
+    font-family: "Krona One", serif;
+    font-size : small;
+    border: none;
+}
+>>>>>>> 49c2c33aa4af5d457720da1d3e1a8c836f7b8337

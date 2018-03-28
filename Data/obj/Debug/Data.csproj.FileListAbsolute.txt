@@ -12,3 +12,13 @@ C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.dll
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\bin\Debug\Data.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\bin\Debug\Data.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\bin\Debug\Domain.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\bin\Debug\Domain.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\bin\Debug\Domain.dll.config
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.csproj.CopyComplete
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.pdb

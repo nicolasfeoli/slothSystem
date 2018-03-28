@@ -10,7 +10,6 @@ namespace Util
 {
     public class Utility
     {
-        public static string connectionString = WebConfigurationManager.ConnectionStrings["db_gestion_estudiantil_b56246"].ToString();
         public static string USER_AUTHENTICATED = "UserAuthentication";
         public static string USER_ROLE = "UserRole";
         public static int ADMIN_ROLE = 1;
