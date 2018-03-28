@@ -1,6 +1,7 @@
 ﻿:root{
     --main-bg-color: #101438;
     --gray-bg-color: #DDDDDD;
+
 }
 
 .line{    
@@ -95,8 +96,8 @@ footer {
 }
 
 #ContentDiv1 {
-    width: 84%;
-    margin: 0 18%;        
+    width: 82%;
+    margin: auto 16%;        
     text-align: center;
 }
 
@@ -114,4 +115,14 @@ a:hover {
     float: left;
     font-weight: bold;
     text-decoration: underline;
+}
+.buttonOpen {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-weight: bold;
+    padding : 0.5em;
+    border-radius: 0.4em;
+    font-family: "Krona One", serif;
+    font-size : small;
+    border: none;
 }

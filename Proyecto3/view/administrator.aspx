@@ -10,6 +10,12 @@
         </nav>
     </div>
     <div id="ContentDiv1">
+        <asp:GridView ID="ProyectoView" runat="server"  HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
+        <rowstyle Height="50px" />
+        <alternatingrowstyle  Height="50px"/>
+        </asp:GridView>
+        <br /><br /><br /><br />
+        <asp:Button ID="openProyect" cssClass= "buttonOpen" runat="server" Text="Abrir Proyecto"/>
         
     </div>  
 </asp:Content>

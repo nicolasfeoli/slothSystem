@@ -21,11 +21,13 @@ namespace Proyecto3
                 if ((int)Session[Utility.USER_ROLE] == Utility.ADMIN_ROLE)
                 {
                     Response.Redirect(Utility.ADMINISTRATOR_PRINCIPAL_PAGE);
+
                 } else if ((int)Session[Utility.USER_ROLE] == Utility.ANALYST_ROLE)
                 {
                     Response.Redirect(Utility.ANALYST_PRINCIPAL_PAGE);
                 }                
             }
+            
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
