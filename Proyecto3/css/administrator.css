@@ -1,6 +1,7 @@
 ﻿:root{
     --main-bg-color: #101438;
     --gray-bg-color: #DDDDDD;
+    --orange-color: #E9630A;
 }
 
 .line{    
@@ -95,9 +96,9 @@ footer {
 }
 
 #ContentDiv1 {
-    width: 84%;
-    margin: 0 18%;        
-    text-align: center;
+    width: 82%;
+    margin: auto 16%;        
+    text-align: center;     
 }
 
 #breadcrumbs{
@@ -114,4 +115,49 @@ a:hover {
     float: left;
     font-weight: bold;
     text-decoration: underline;
+}
+
+#divForm {
+    display: inline-block;
+    color: var(--main-bg-color);
+    font-weight: bold; 
+}
+
+
+#ContentDiv1 {
+    color: var(--main-bg-color); 
+}
+
+#newOperationLink {
+    float: right;
+    color: var(--orange-color);
+}
+
+#newOperationLink:hover {
+    text-decoration: underline;
+}
+
+.btnPlus {
+    background-color: white;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.btnLess {
+    background-color: white;
+    border: none;
+    color: green;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.btnSave {
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 0.5em;
+    font-family: 'Krona One', serif;
+    border: none;    
+    border-radius: 0.2em;
 }

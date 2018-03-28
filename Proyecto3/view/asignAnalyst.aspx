@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdministratorPrincipal.Master" AutoEventWireup="true" CodeBehind="newProject.aspx.cs" Inherits="Proyecto3.view.newProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdministratorPrincipal.Master" AutoEventWireup="true" CodeBehind="asignAnalyst.aspx.cs" Inherits="Proyecto3.view.asignAnalyst" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -52,9 +52,9 @@
                     <textarea class="form-control" rows="5" id="description"></textarea>
                 </div>
                 <br /><br /><br />
-                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewProject"/>
+                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="asignAnalystToProject"/>
                 <br /><br /><br />
             </div>
         </div>               
-    </div>  
+    </div> 
 </asp:Content>

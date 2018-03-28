@@ -78,6 +78,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -171,8 +172,12 @@
     <Content Include="view\about.aspx" />
     <Content Include="view\administrator.aspx" />
     <Content Include="view\analystView.aspx" />
+    <Content Include="view\asignAnalyst.aspx" />
     <Content Include="view\collaborator.aspx" />
+    <Content Include="view\newAnalyst.aspx" />
+    <Content Include="view\newOperation.aspx" />
     <Content Include="view\newProject.aspx" />
+    <Content Include="view\newTask.aspx" />
     <Content Include="view\operation.aspx" />
     <Content Include="view\project.aspx" />
     <Content Include="view\task.aspx" />
@@ -224,6 +229,13 @@
     <Compile Include="view\analystView.aspx.designer.cs">
       <DependentUpon>analystView.aspx</DependentUpon>
     </Compile>
+    <Compile Include="view\asignAnalyst.aspx.cs">
+      <DependentUpon>asignAnalyst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\asignAnalyst.aspx.designer.cs">
+      <DependentUpon>asignAnalyst.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\collaborator.aspx.cs">
       <DependentUpon>collaborator.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,12 +243,33 @@
     <Compile Include="view\collaborator.aspx.designer.cs">
       <DependentUpon>collaborator.aspx</DependentUpon>
     </Compile>
+    <Compile Include="view\newAnalyst.aspx.cs">
+      <DependentUpon>newAnalyst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newAnalyst.aspx.designer.cs">
+      <DependentUpon>newAnalyst.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\newOperation.aspx.cs">
+      <DependentUpon>newOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newOperation.aspx.designer.cs">
+      <DependentUpon>newOperation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\newProject.aspx.cs">
       <DependentUpon>newProject.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="view\newProject.aspx.designer.cs">
       <DependentUpon>newProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\newTask.aspx.cs">
+      <DependentUpon>newTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newTask.aspx.designer.cs">
+      <DependentUpon>newTask.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\operation.aspx.cs">
       <DependentUpon>operation.aspx</DependentUpon>

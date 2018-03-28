@@ -78,3 +78,5 @@ C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\MySql.Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\MySql.Data.xml

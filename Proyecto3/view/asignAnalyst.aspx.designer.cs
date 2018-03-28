@@ -10,7 +10,7 @@
 namespace Proyecto3.view {
     
     
-    public partial class newProject {
+    public partial class asignAnalyst {
         
         /// <summary>
         /// name control.

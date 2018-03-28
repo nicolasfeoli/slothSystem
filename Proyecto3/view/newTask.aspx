@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdministratorPrincipal.Master" AutoEventWireup="true" CodeBehind="newProject.aspx.cs" Inherits="Proyecto3.view.newProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdministratorPrincipal.Master" AutoEventWireup="true" CodeBehind="newTask.aspx.cs" Inherits="Proyecto3.view.newTask" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,8 +6,8 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">    
                 <li class="breadcrumb-item"><a href="/view/administrator.aspx">Principal</a></li>
-                <li class="breadcrumb-item"><a href="/view/project.aspx">Proyectos</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Nuevo proyecto</li>
+                <li class="breadcrumb-item"><a href="/view/tasks.aspx">Tareas</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nueva tarea</li>
             </ol>
         </nav>
     </div>
@@ -17,14 +17,8 @@
                 <label for="name">Nombre</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="name"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" ErrorMessage="Ingrese el nombre del proyecto" ForeColor="Red"></asp:RequiredFieldValidator>
-                <label for="projectPlace">Lugar de realización</label>                
-                <asp:TextBox type="text" runat="server" class="form-control" id="projectPlace"/>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="projectPlace" ErrorMessage="Ingrese el lugar de realización" ForeColor="Red"></asp:RequiredFieldValidator>
                 
-                <label for="initialDate">Fecha de inicio</label>                
-                <asp:TextBox type="date" runat="server" class="form-control" id="initialDate"/>                                    
-                <br />
-                <label for="initialDate">Operaciones</label>                
+                <label for="initialDate">Colaboradores</label>                
                 <br />
                 <div>
                     <div style="width:80%; float: left">
@@ -36,15 +30,15 @@
                     </div>
                 </div>
                 <br />
-                <a href="/view/newOperation.aspx" id="newOperationLink">Nueva operación</a>
+                <a href="/view/newColaborator.aspx" id="newOperationLink">Nueva colaborador</a>
             </div>
             <div class="form-control" style="float: right; width: 50%;">
-                <label for="sel1">Estado:</label><br />
+                <label for="sel1">Actividad:</label><br />
                 <select class="form-control" id="sel1">
-                    <option>Seleccione el estado</option>
-                    <option>Concluido</option>
-                    <option>En proceso</option>
-                    <option>Sin fecha de inicio</option>                   
+                    <option>Seleccione la actividad</option>
+                    <option>Tarea productiva</option>
+                    <option>Tarea improductiva</option>
+                    <option>Tarea colaborativa</option>                   
                 </select>
                 <br />
                 <div class="form-group">
@@ -52,9 +46,9 @@
                     <textarea class="form-control" rows="5" id="description"></textarea>
                 </div>
                 <br /><br /><br />
-                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewProject"/>
+                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewTask"/>
                 <br /><br /><br />
             </div>
         </div>               
-    </div>  
+    </div> 
 </asp:Content>

@@ -24,5 +24,9 @@ namespace Util
         public static string OPERATIONS_PAGE = "/view/projects.aspx";
         public static string TASKS_PAGE = "/view/projects.aspx";
         public static string WORKING_HOURS_PAGE = "/view/projects.aspx";
+
+        public static string CONNECTION_STRING = "Data source=163.178.173.144;Database=Sloth-System-DB;User Id=multi-paraiso;Password=multimedios.rp.2017;";
+
+        public static string SP_INSERT_PROJECT = "sp_insert_project";
     }
 }
