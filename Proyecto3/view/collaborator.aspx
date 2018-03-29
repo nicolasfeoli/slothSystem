@@ -12,5 +12,19 @@
     </div>    
     <div id="ContentDiv1">
         <a href="/view/newCollaborator.aspx" id="linkNew">Nuevo colaborador</a>
+        <br /><br /><br />
+        <div>
+            <div style="width:80%; float: left">
+                <asp:GridView ID="CollaboratorsView" runat="server"  HorizontalAlign="Center" 
+                    CssClass="table table-striped table-bordered table-hover" DataKeyNames="idCOLLABORATOR">
+                    
+                </asp:GridView>
+            </div>
+            <div style="width:20%; float: right">
+                <br /><br />
+                <asp:Button runat="server" Text="Modificar" cssClass="btnAdd" ID="btnLess"/>
+                <asp:Button runat="server" Text="Eliminar" cssClass="btnRemove" ID="btnPlus"/>                                                       
+            </div>
+        </div>        
     </div>   
 </asp:Content>

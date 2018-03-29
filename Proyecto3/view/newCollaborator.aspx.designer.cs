@@ -22,6 +22,15 @@ namespace Proyecto3.view {
         protected global::System.Web.UI.WebControls.Label dangerAlert;
         
         /// <summary>
+        /// sucessAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label sucessAlert;
+        
+        /// <summary>
         /// alias control.
         /// </summary>
         /// <remarks>

@@ -14,5 +14,13 @@ namespace Proyecto3
         {
 
         }
+
+        protected void Button_LogOut(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.Write("---------------------" + "\n");
+            Session[Utility.USER_AUTHENTICATED] = null;
+            Session[Utility.USER_ROLE] = null;
+            Response.Redirect(Utility.DEFAULT_PAGE);
+        }
     }
 }

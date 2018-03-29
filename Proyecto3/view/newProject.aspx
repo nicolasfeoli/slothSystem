@@ -12,49 +12,42 @@
         </nav>
     </div>
     <div id="ContentDiv1">
+        <asp:Label runat="server"  ID="dangerAlert" class="alert alert-danger" Visible="false" Width="100%">
+            <strong><asp:Label runat="server" ID="alertDangerMessage"></asp:Label></strong>
+        </asp:Label><br /><br />
+        <asp:Label runat="server" ID="successAlert" class="alert alert-success" Visible="false" Width="100%">
+            <strong><asp:Label runat="server" ID="alertSuccessMessage"></asp:Label></strong>
+        </asp:Label>
         <div id="divForm" >
             <div class="form-control" style="float: left; width: 50%;">
                 <label for="name">Nombre</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="name"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" ErrorMessage="Ingrese el nombre del proyecto" ForeColor="Red"></asp:RequiredFieldValidator>
-                <label for="projectPlace">Lugar de realización</label>                
-                <asp:TextBox type="text" runat="server" class="form-control" id="projectPlace"/>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="projectPlace" ErrorMessage="Ingrese el lugar de realización" ForeColor="Red"></asp:RequiredFieldValidator>
+                <label for="projectLocation">Lugar de realización</label>                
+                <asp:TextBox type="text" runat="server" class="form-control" id="projectLocation"/>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="projectLocation" ErrorMessage="Ingrese el lugar de realización" ForeColor="Red"></asp:RequiredFieldValidator>
                 
                 <label for="initialDate">Fecha de inicio</label>                
-                <asp:TextBox type="date" runat="server" class="form-control" id="initialDate"/>                                    
-                <br />
-                <label for="initialDate">Operaciones</label>                
-                <br />
-                <div>
-                    <div style="width:80%; float: left">
-                        <br /><br /><br /><br />
-                    </div>
-                    <div style="width:20%; float: right">
-                        <asp:Button runat="server" Text="+" cssClass="btnPlus" ID="btnPlus"/>                       
-                        <asp:Button runat="server" Text="-" cssClass="btnLess" ID="btnLess"/>
-                    </div>
-                </div>
-                <br />
-                <a href="/view/newOperation.aspx" id="newOperationLink">Nueva operación</a>
+                <asp:TextBox type="date" runat="server" class="form-control" id="initialDate"/>   
+                <br />                                                                 
             </div>
             <div class="form-control" style="float: right; width: 50%;">
                 <label for="sel1">Estado:</label><br />
-                <select class="form-control" id="sel1">
-                    <option>Seleccione el estado</option>
-                    <option>Concluido</option>
-                    <option>En proceso</option>
-                    <option>Sin fecha de inicio</option>                   
-                </select>
+                <asp:DropDownList runat="server" class="form-control" id="statusSelect">
+                    <asp:ListItem>Seleccione el estado</asp:ListItem>
+                    <asp:ListItem Value="Concluido">Concluido</asp:ListItem>
+                    <asp:ListItem Value="En proceso">En proceso</asp:ListItem>
+                    <asp:ListItem Value="Sin fecha inicio">Sin fecha inicio</asp:ListItem>                   
+                </asp:DropDownList>
                 <br />
                 <div class="form-group">
                     <label for="description">Descripción:</label>
-                    <textarea class="form-control" rows="5" id="description"></textarea>
-                </div>
-                <br /><br /><br />
-                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewProject"/>
-                <br /><br /><br />
-            </div>
-        </div>               
+                    <asp:textbox runat="server" TextMode="multiline" class="form-control" Rows="7" Columns="7" id="description"></asp:textbox>
+                </div>    
+            </div>            
+        </div>    
+        <br /><br /><br />
+        <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewProject"/>
+        <br /><br /><br />           
     </div>  
 </asp:Content>

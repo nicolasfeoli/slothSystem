@@ -27,7 +27,7 @@ namespace Proyecto3.view
             string connectionString = "Data source=163.178.173.144;Database=Sloth-System-DB;User Id=multi-paraiso;Password=multimedios.rp.2017;";
             using (MySqlConnection cn = new MySqlConnection(connectionString))
             {
-                MySqlDataAdapter adp = new MySqlDataAdapter("SELECT name, status FROM Proyect", cn);
+                MySqlDataAdapter adp = new MySqlDataAdapter("SELECT name, status FROM PROJECT", cn);
                 DataTable dt = new DataTable();
                 adp.Fill(dt);
                 if (dt.Rows.Count > 0)

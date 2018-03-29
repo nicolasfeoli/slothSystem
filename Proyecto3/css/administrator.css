@@ -59,7 +59,9 @@
     background-color: white;
     color: var(--main-bg-color);
     font-weight: bold;
-    float: right;        
+    float: right;   
+    padding: 0.5em;     
+    margin-right: 0.5em;  
 }
 
 #btn:hover {
@@ -161,6 +163,7 @@ a:hover {
     border: none;    
     border-radius: 0.2em;
 }
+
 .buttonOpen {
     background-color: var(--main-bg-color);
     color: white;
@@ -185,3 +188,39 @@ a:hover {
     color: red; 
     font-weight: bold;   
 }
+
+
+
+
+
+
+
+
+
+#LabelTittleLoggin {
+    font-family: 'Krona One', serif;
+    font-size: 2em;
+    color: white;
+}
+
+#headerTittle {
+    background-color: var(--main-bg-color);    
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 10% auto;
+}
+
+.form-group{    
+    width: 15%;
+    margin: 0 auto;
+}
+
+.form-group label{
+      color: var(--main-bg-color);
+      font-family: 'Krona One', serif;
+}
+
+#buttonLoggin{
+    text-align: center;   
+} 

@@ -1,7 +1,7 @@
 ﻿:root{
     --main-bg-color: #101438;
 }
-
+  
 #imageLogo {
     width: 5%;
 }
@@ -38,3 +38,12 @@
 div{
     text-align: center;   
 }
+
+.btnSave {
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 0.5em;
+    font-family: 'Krona One', serif;
+    border: none;    
+    border-radius: 0.2em;
+} 

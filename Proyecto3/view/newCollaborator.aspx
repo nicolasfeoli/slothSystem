@@ -15,6 +15,9 @@
         <asp:Label runat="server"  ID="dangerAlert" class="alert alert-danger" Visible="false" Width="100%">
           <strong>No se pudo insertar el collaborador</strong>
         </asp:Label><br /><br />
+        <asp:Label runat="server" ID="sucessAlert" class="alert alert-success" Visible="false" Width="100%">
+          <strong>Colaborador ingresado con éxito</strong>
+        </asp:Label>
         <div id="divForm" >
             <div class="form-control" style="float: left; width: 50%;">
                 <label for="alias">Alias</label>                
@@ -23,7 +26,7 @@
                 <br />
                 <div class="form-group">
                     <label for="description">Descripción:</label>
-                    <asp:textbox runat="server" mode="multiline" class="form-control" rows="5" id="description"></asp:textbox>
+                    <asp:textbox runat="server" TextMode="multiline" class="form-control" Rows="5" id="description"></asp:textbox>
                 </div>
             </div>
             <div class="form-control" style="float: right; width: 50%;">

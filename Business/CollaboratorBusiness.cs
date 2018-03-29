@@ -23,5 +23,10 @@ namespace Business
         {
             return collaboratorData.insertCollaborator(collaborator);
         }
+
+        public DataTable getCollaborators()
+        {
+            return collaboratorData.getCollaborators();
+        }
     }
 }

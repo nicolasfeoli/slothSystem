@@ -25,6 +25,7 @@ namespace Proyecto3.view
             bool responde = collaboratorBusiness.insertCollaborator(collaborator);
             if (responde)
             {
+                sucessAlert.Visible = true;
                 Response.Redirect(Utility.COLLABORATOR_PAGE);
             } else
             {

@@ -10,14 +10,7 @@ namespace Domain
     {
         private int id;
         private string nombre;
-        private List<Task> tasks;
-
-        public Operation(int id, string nombre, List<Task> tasks)
-        {
-            this.id = id;
-            this.nombre = nombre;
-            this.tasks = new List<Task>();
-        }
+        private string description;
 
         public int Id
         {
@@ -32,7 +25,7 @@ namespace Domain
             }
         }
 
-        public string Nombre
+        public string Name
         {
             get
             {
@@ -45,17 +38,30 @@ namespace Domain
             }
         }
 
-        internal List<Task> Tasks
+        public string Description
         {
             get
             {
-                return tasks;
+                return description;
             }
 
             set
             {
-                tasks = value;
+                description = value;
             }
+        }
+
+        public Operation(string nombre, string description)
+        {
+            this.nombre = nombre;
+            this.description = description;
+        }
+
+        public Operation(int id, string nombre, string description)
+        {
+            this.id = id;
+            this.nombre = nombre;
+            this.description = description;
         }
     }
 }

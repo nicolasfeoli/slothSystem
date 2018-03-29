@@ -13,43 +13,31 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <header>
+<body>    
+    <form id="form1" runat="server">
+        <header>
         <br />
         <div id="tittleLogo" >            
             <a href="/view/administrator.aspx" id="aLinkLogo"><asp:label ID="Label1" runat="server">SLOTH SYSTEM</asp:label> </a>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
-            <a href="/view/administrator.aspx"><asp:Image ID="imageLogo" runat="server" src="../images/logo.png"/></a>
-            <button type="submit" class="btn btn-default" id="btnLogOut">Cerrar sesión</button>
+            <a href="/view/administrator.aspx"><asp:Image ID="imageLogo" runat="server" src="../images/logo.png"/></a>            
+            <asp:Button runat="server" Text="Cerrar sessión" cssClass="btnLogOut" ID="btnLogOut" OnClick="Button_LogOut" CausesValidation="false"/>            
         </div>  
         <br />
         <div style="display: inline-block">
             <div class="line"></div>            
             <div class="line" id="menuBox">
-                <button type="submit" class="btn btn-default" id="btnOptions">Opciones</button><br /><br />
-                <form action="/view/project.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Proyectos</button><br /><br />
-                </form>
-                <form action="/view/operation.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Operaciones</button><br /><br />
-                </form>
-                <form action="/view/task.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Tareas</button><br /><br />
-                </form>
-                <form action="/view/analystView.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Analistas</button><br /><br />
-                </form>
-                <form action="/view/collaborator.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Colaboradores</button><br /><br />
-                </form>
-                <form action="/view/workingHours.aspx" method="get">
-                    <button type="submit" class="btn btn-default" id="btn">Horarios de trabajo</button><br /><br />
-                </form>
+                <button type="submit" class="btn btn-default" id="btnOptions">Opciones</button><br /><br />                
+                <a href="/view/project.aspx" id="btn">Proyectos</a><br /><br />
+                <a href="/view/operation.aspx" id="btn">Operaciones</a><br /><br />
+                <a href="/view/task.aspx" id="btn">Tareas</a><br /><br />
+                <a href="/view/analystView.aspx" id="btn">Analistas</a><br /><br />
+                <a href="/view/collaborator.aspx" id="btn">Collaborator</a><br /><br />
+                <a href="/view/workingHours.aspx" id="btn">Horarios de trabajo</a><br /><br />                
                 <br /><br /><br />
             </div>
         </div>        
-    </header>
-    <form id="form1" runat="server">
+        </header>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      
             

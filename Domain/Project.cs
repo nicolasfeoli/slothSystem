@@ -8,21 +8,24 @@ namespace Domain
 {
     public class Project
     {
+        private int id;
         private string name;
-        private int status;
-        private string location;
-        private string initialDate;
+        private string status;
+        private string location;        
         private string description;
-        private List<Operation> operations;
+        private string initialDate;
 
-        public Project(string name, int status, string location, string initialDate, string description, List<Operation> operations)
+        public int Id
         {
-            this.name = name;
-            this.status = status;
-            this.location = location;
-            this.initialDate = initialDate;
-            this.description = description;
-            this.operations = new List<Operation>();
+            get
+            {
+                return id;
+            }
+
+            set
+            {
+                id = value;
+            }
         }
 
         public string Name
@@ -38,7 +41,7 @@ namespace Domain
             }
         }
 
-        public int Status
+        public string Status
         {
             get
             {
@@ -64,19 +67,6 @@ namespace Domain
             }
         }
 
-        public string InitialDate
-        {
-            get
-            {
-                return initialDate;
-            }
-
-            set
-            {
-                initialDate = value;
-            }
-        }
-
         public string Description
         {
             get
@@ -90,17 +80,44 @@ namespace Domain
             }
         }
 
-        internal List<Operation> Operations
+        public string InitialDate
         {
             get
             {
-                return operations;
+                return initialDate;
             }
 
             set
             {
-                operations = value;
+                initialDate = value;
             }
-        }        
+        }
+
+        public Project(int id, string name, string status, string location, string description, string initialDate)
+        {
+            this.id = id;
+            this.name = name;
+            this.status = status;
+            this.location = location;
+            this.description = description;
+            this.initialDate = initialDate;
+        }
+
+        public Project(string name, string status, string location, string description, string initialDate)
+        {
+            this.name = name;
+            this.status = status;
+            this.location = location;
+            this.description = description;
+            this.initialDate = initialDate;
+        }
+
+        public Project(string name, string status, string location, string description)
+        {
+            this.name = name;
+            this.status = status;
+            this.location = location;
+            this.description = description;
+        }
     }
 }

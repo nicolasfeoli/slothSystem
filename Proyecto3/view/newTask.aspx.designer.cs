@@ -13,6 +13,24 @@ namespace Proyecto3.view {
     public partial class newTask {
         
         /// <summary>
+        /// dangerAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label dangerAlert;
+        
+        /// <summary>
+        /// successAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label successAlert;
+        
+        /// <summary>
         /// name control.
         /// </summary>
         /// <remarks>
@@ -31,22 +49,22 @@ namespace Proyecto3.view {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// btnPlus control.
+        /// activitySelect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPlus;
+        protected global::System.Web.UI.WebControls.DropDownList activitySelect;
         
         /// <summary>
-        /// btnLess control.
+        /// description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLess;
+        protected global::System.Web.UI.WebControls.TextBox description;
         
         /// <summary>
         /// Button1 control.

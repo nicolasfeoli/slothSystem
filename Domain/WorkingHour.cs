@@ -20,6 +20,14 @@ namespace Domain
             this.duration = duration;
             this.description = description;
         }
+
+        public WorkingHour(string hour, int duration, string description)
+        {
+            this.hour = hour;
+            this.duration = duration;
+            this.description = description;
+        }
+
         public int Id
         {
             get

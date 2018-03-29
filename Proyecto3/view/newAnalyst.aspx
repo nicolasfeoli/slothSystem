@@ -12,8 +12,14 @@
         </nav>
     </div>
     <div id="ContentDiv1">
-        <div id="divForm" >
-            <div class="form-control" style="float: left; width: 50%;">
+        <asp:Label runat="server"  ID="dangerAlert" class="alert alert-danger" Visible="false" Width="100%">
+            <strong><asp:Label runat="server" ID="alertDangerMessage"></asp:Label></strong>
+        </asp:Label><br /><br />
+        <asp:Label runat="server" ID="successAlert" class="alert alert-success" Visible="false" Width="100%">
+            <strong><asp:Label runat="server" ID="alertSuccessMessage"></asp:Label></strong>
+        </asp:Label>
+        <div id="divForm" >            
+            <div class="form-control" style="float: left; width: 50%;">                
                 <label for="name">Nombre</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="name"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="name" ErrorMessage="Ingrese el nombre del proyecto" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -24,6 +30,8 @@
                 <label for="userName">Nombre de usuario</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="userName"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="userName" ErrorMessage="Ingrese el nombre de usuario" ForeColor="Red"></asp:RequiredFieldValidator>                                
+                <br />
+                <asp:CheckBox id="isAnalystCheckBox" Text="Es administrador" Checked="False" runat="server"/>    
             </div>
             <div class="form-control" style="float: right; width: 50%;">
                <label for="userEmail">Email</label>                
@@ -37,9 +45,10 @@
                 <label for="userPasswordConfirmation">Confirme su contraseña</label>                
                 <asp:TextBox type="password" runat="server" class="form-control" id="userPasswordConfirmation"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="userPasswordConfirmation" ErrorMessage="Vuelva a ingresar su contraseña" ForeColor="Red"></asp:RequiredFieldValidator>                
+                <br />
+                <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewAnalyst"/>               
             </div>                        
         </div>    
-        <br /><br />
-        <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveNewAnalyst"/>           
+        <br /><br />        
     </div> 
 </asp:Content>

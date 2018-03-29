@@ -20,11 +20,45 @@ namespace Proyecto3.view
 
         public void saveNewProject(Object sender, EventArgs e)
         {
-            Project project = null;
-            if (projectBusiness.insertNewProject(project))
+            if (statusSelect.SelectedIndex == 0)
             {
-                Response.Redirect(Utility.PROJECTS_PAGE);
-            }                
+                dangerAlert.Visible = false;
+                dangerAlert.Visible = true;
+                alertDangerMessage.Text = "Seleccione el estado del proyecto";
+            } else {
+                if (initialDate.Text.Length == 0)
+                {
+                    if (statusSelect.SelectedIndex != 3)
+                    {
+                        dangerAlert.Visible = true;
+                        alertDangerMessage.Text = "Debe ingresar la fecha o cambiar el estado del proyecto a Sin fecha inicio";
+                    } else
+                    {
+                        Project project = new Project(name.Text, statusSelect.SelectedItem.Value, projectLocation.Text, description.Text);
+                        if (projectBusiness.insertNewProject(project))
+                        {
+                            Response.Redirect(Utility.PROJECTS_PAGE);
+                        } else
+                        {
+                            dangerAlert.Visible = false;
+                            dangerAlert.Visible = true;
+                            alertDangerMessage.Text = "No se pudo ingresar el proyecto";
+                        }
+                    }
+                } else
+                {
+                    Project project = new Project(name.Text, statusSelect.SelectedItem.Value, projectLocation.Text, description.Text, initialDate.Text);
+                    if (projectBusiness.insertNewProject(project))
+                    {
+                        Response.Redirect(Utility.PROJECTS_PAGE);
+                    } else
+                    {
+                        dangerAlert.Visible = false;
+                        dangerAlert.Visible = true;
+                        alertDangerMessage.Text = "No se pudo ingresar el proyecto";
+                    }
+                }                
+            }        
         }
     } 
 }

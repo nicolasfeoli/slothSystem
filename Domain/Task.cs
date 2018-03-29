@@ -12,15 +12,20 @@ namespace Domain
         private string name;
         private string activity;
         private string description;
-        private List<Collaborator> collaborators;
 
-        public Task(int id, string name, string activity, string description, List<Collaborator> collaborators)
+        public Task(int id, string name, string activity, string description)
         {
             this.id = id;
             this.name = name;
             this.activity = activity;
             this.description = description;
-            this.collaborators = new List<Collaborator>();
+        }
+
+        public Task(string name, string activity, string description)
+        {
+            this.name = name;
+            this.activity = activity;
+            this.description = description;
         }
 
         public int Id
@@ -72,19 +77,6 @@ namespace Domain
             set
             {
                 description = value;
-            }
-        }
-
-        internal List<Collaborator> Collaborators
-        {
-            get
-            {
-                return collaborators;
-            }
-
-            set
-            {
-                collaborators = value;
             }
         }
     }
