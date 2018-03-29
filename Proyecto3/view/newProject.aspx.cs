@@ -5,27 +5,26 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Util;
-using System.Data;
-using MySql.Data.MySqlClient;
+using Business;
+using Domain;
 
 namespace Proyecto3.view
 {
     public partial class newProject : System.Web.UI.Page
     {
+        private ProjectBusiness projectBusiness;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            projectBusiness = new ProjectBusiness();
         }
 
         public void saveNewProject(Object sender, EventArgs e)
-        {            
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+        {
+            Project project = null;
+            if (projectBusiness.insertNewProject(project))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_INSERT_PROJECT, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("");
-            }
                 Response.Redirect(Utility.PROJECTS_PAGE);
+            }                
         }
     } 
 }

@@ -28,3 +28,7 @@ C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.cspro
 C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.dll
 C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\MySql.Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Util.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\MySql.Data.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Util.pdb
