@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    class WorkinHourData
+    public class WorkinHourData
     {
     }
 }

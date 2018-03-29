@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    class WorkinHourBusiness
+    public class WorkinHourBusiness
     {
     }
 }

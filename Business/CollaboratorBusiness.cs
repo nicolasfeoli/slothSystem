@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    class CollaboratorBusiness
+    public class CollaboratorBusiness
     {
     }
 }

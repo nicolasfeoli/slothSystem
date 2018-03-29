@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    class TaskData
+    public class TaskData
     {
     }
 }
