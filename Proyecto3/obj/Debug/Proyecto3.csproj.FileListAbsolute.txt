@@ -124,3 +124,5 @@ C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\obj\Debug\Proyecto3.dll
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\obj\Debug\Proyecto3.pdb
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\MySql.Data.dll
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\MySql.Data.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Data.pdb

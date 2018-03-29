@@ -13,6 +13,15 @@ namespace Proyecto3.view {
     public partial class newCollaborator {
         
         /// <summary>
+        /// dangerAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label dangerAlert;
+        
+        /// <summary>
         /// alias control.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,15 @@ namespace Proyecto3.view {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
+        /// description control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox description;
         
         /// <summary>
         /// position control.

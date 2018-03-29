@@ -12,6 +12,9 @@
         </nav>
     </div>
     <div id="ContentDiv1">
+        <asp:Label runat="server"  ID="dangerAlert" class="alert alert-danger" Visible="false" Width="100%">
+          <strong>No se pudo insertar el collaborador</strong>
+        </asp:Label><br /><br />
         <div id="divForm" >
             <div class="form-control" style="float: left; width: 50%;">
                 <label for="alias">Alias</label>                
@@ -20,14 +23,13 @@
                 <br />
                 <div class="form-group">
                     <label for="description">Descripción:</label>
-                    <textarea class="form-control" rows="5" id="description"></textarea>
+                    <asp:textbox runat="server" mode="multiline" class="form-control" rows="5" id="description"></asp:textbox>
                 </div>
             </div>
             <div class="form-control" style="float: right; width: 50%;">
                 <label for="position">Puesto</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="position"/>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="position" ErrorMessage="Ingrese el puesto" ForeColor="Red"></asp:RequiredFieldValidator>
-                
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="position" ErrorMessage="Ingrese el puesto" ForeColor="Red"></asp:RequiredFieldValidator>                
                 <br /><br /><br /><br />
                 <asp:Button runat="server" Text="Guardar" cssClass="btnSave" ID="Button1" OnClick="saveCollaborator"/>
                 <br /><br /><br /><br /><br />

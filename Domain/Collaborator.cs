@@ -21,6 +21,13 @@ namespace Domain
             this.description = description;
         }
 
+        public Collaborator(string alias, string position, string description)
+        {
+            this.alias = alias;
+            this.position = position;
+            this.description = description;
+        }
+
         public int Id
         {
             get
