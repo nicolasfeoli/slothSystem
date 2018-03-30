@@ -78,7 +78,6 @@ C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\MySql.Data.xml
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\ApplicationInsights.config
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\roslyn\csc.exe
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -125,3 +124,9 @@ C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\MySql.Data.dll
 C:\Users\Joseph Salas\source\repos\slothSystem\Proyecto3\bin\MySql.Data.xml
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Data.dll
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Data.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\obj\Debug\Proyecto3.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\System.Net.Http.Formatting.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Newtonsoft.Json.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\System.Net.Http.Formatting.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\bin\Newtonsoft.Json.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Proyecto3\obj\Debug\Proyecto3.csproj.CopyComplete
