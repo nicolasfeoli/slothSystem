@@ -36,6 +36,7 @@ namespace Data
 
         public DataTable getCollaborators()
         {
+            /*
             using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
             {
                 MySqlDataAdapter adp = new MySqlDataAdapter("SELECT idCOLLABORATOR, alias, position, description FROM COLLABORATOR", cn);                
@@ -46,6 +47,7 @@ namespace Data
                     return dt;
                 }
             }
+            */
             return null;
         }
     }

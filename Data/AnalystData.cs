@@ -7,6 +7,7 @@ using Domain;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Util;
+using System.Data.SqlClient;
 
 namespace Data
 {
@@ -39,34 +40,57 @@ namespace Data
 
         public object getUserRole(Analyst analyst)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+            int resultValidation = -2;
+
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_GET_USER_ROLE, conn))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_GET_USER_ROLE, cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("userName", MySqlDbType.VarChar).Value = analyst.User;                
+                cmd.Parameters.Add("userName", SqlDbType.VarChar).Value = analyst.User;                
 
-                cn.Open();
-                object result = cmd.ExecuteScalar();
+                conn.Open();
 
-                return (int)result;
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    while (rdr.Read())
+                    {
+                        resultValidation = rdr.GetInt32(0);
+                    }
+
+                    rdr.Close();
+                }
+
+                conn.Close();
             }
+            return resultValidation;            
         }
 
         public int validatePassword(Analyst analyst)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
-            {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_VALIDATE_PASSWORD, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("userName", MySqlDbType.VarChar).Value = analyst.User;
-                cmd.Parameters.Add("password", MySqlDbType.VarChar).Value = analyst.Password;
+            int resultValidation = -2;
 
-                cn.Open();
-                object result = cmd.ExecuteScalar();
-                System.Diagnostics.Debug.Write("result: " + result + "\n");
-                System.Diagnostics.Debug.Write("result: " + result.GetType() + "\n");
-                return Convert.ToInt32(result);
-            }            
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_VALIDATE_PASSWORD, conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("userName", SqlDbType.VarChar).Value = analyst.User;
+                cmd.Parameters.Add("password", SqlDbType.VarChar).Value = analyst.Password;
+                
+                conn.Open();
+
+                using (SqlDataReader rdr = cmd.ExecuteReader())
+                {
+                    while (rdr.Read())
+                    {                        
+                       resultValidation = rdr.GetInt32(0);
+                    }
+
+                    rdr.Close();
+                }
+
+                conn.Close();
+            }
+            return resultValidation;
         }
     }
 }

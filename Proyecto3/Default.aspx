@@ -24,19 +24,19 @@
                 <asp:Image ID="imageLogo" runat="server" src="images/logo.png"/>
                 <br />
             </div>            
-            <div class="form-group">
+            <div class="form-group" id="divLoggin">
                 <label for="usr">Nombre usuario</label>                
                 <asp:TextBox type="text" runat="server" class="form-control" id="usr"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="usr" ErrorMessage="Ingrese el nombre de usuario" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             <br /><br />
-            <div class="form-group">
+            <div class="form-group" id="divLoggin">
                 <label for="pwd">Contraseña</label>
                 <asp:TextBox type="password" runat="server" class="form-control" id="pwd"/>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="pwd" ErrorMessage="Ingrese su contraseña" ForeColor="Red"></asp:RequiredFieldValidator>                                
             </div> 
             <br />
-            <div id="buttonLoggin">                
+            <div id="buttonLoggin" id="divLoggin">                
                 <asp:Button runat="server" Text="Iniciar sessión" cssClass="btnSave" ID="Button1" OnClick="Button_Loggin"/>
             </div>                       
         </form>

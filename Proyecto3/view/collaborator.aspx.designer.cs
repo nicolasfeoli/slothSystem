@@ -13,30 +13,21 @@ namespace Proyecto3.view {
     public partial class collaborator {
         
         /// <summary>
-        /// CollaboratorsView control.
+        /// GridView2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CollaboratorsView;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
         
         /// <summary>
-        /// btnLess control.
+        /// CollaboratorSelectDB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLess;
-        
-        /// <summary>
-        /// btnPlus control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPlus;
+        protected global::System.Web.UI.WebControls.SqlDataSource CollaboratorSelectDB;
     }
 }

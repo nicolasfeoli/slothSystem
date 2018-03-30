@@ -12,19 +12,34 @@
     </div>    
     <div id="ContentDiv1">
         <a href="/view/newCollaborator.aspx" id="linkNew">Nuevo colaborador</a>
-        <br /><br /><br />
-        <div>
-            <div style="width:80%; float: left">
-                <asp:GridView ID="CollaboratorsView" runat="server"  HorizontalAlign="Center" 
-                    CssClass="table table-striped table-bordered table-hover" DataKeyNames="idCOLLABORATOR">
-                    
-                </asp:GridView>
-            </div>
-            <div style="width:20%; float: right">
-                <br /><br />
-                <asp:Button runat="server" Text="Modificar" cssClass="btnAdd" ID="btnLess"/>
-                <asp:Button runat="server" Text="Eliminar" cssClass="btnRemove" ID="btnPlus"/>                                                       
-            </div>
-        </div>        
+        <br /><br />
+        <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="Codigo" DataSourceID="CollaboratorSelectDB"
+            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
+            <Columns>                
+                <asp:BoundField DataField="Codigo" Visible="false" HeaderText="Código" InsertVisible="False" ReadOnly="True" SortExpression="Codigo" />
+                <asp:BoundField DataField="alias" HeaderText="Alias" SortExpression="alias" />
+                <asp:BoundField DataField="position" HeaderText="Puesto" SortExpression="position" />
+                <asp:BoundField DataField="description" HeaderText="Descripción del puesto" SortExpression="description" />
+                <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" HeaderText="Acciones"/>
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="CollaboratorSelectDB" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [COLLABORATOR] WHERE [idCOLLABORATOR] = @idCOLLABORATOR" InsertCommand="INSERT INTO [COLLABORATOR] ([alias], [position], [description]) VALUES (@alias, @position, @description)" SelectCommand="SELECT * FROM [COLLABORATOR]" UpdateCommand="UPDATE [COLLABORATOR] SET [alias] = @alias, [position] = @position, [description] = @description WHERE [idCOLLABORATOR] = @idCOLLABORATOR">
+            <DeleteParameters>
+                <asp:Parameter Name="idCOLLABORATOR" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="alias" Type="String" />
+                <asp:Parameter Name="position" Type="String" />
+                <asp:Parameter Name="description" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="alias" Type="String" />
+                <asp:Parameter Name="position" Type="String" />
+                <asp:Parameter Name="description" Type="String" />
+                <asp:Parameter Name="idCOLLABORATOR" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+        <br />
+         
     </div>   
 </asp:Content>

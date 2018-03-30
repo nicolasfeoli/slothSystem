@@ -180,6 +180,7 @@
     <Content Include="view\newOperation.aspx" />
     <Content Include="view\newProject.aspx" />
     <Content Include="view\newTask.aspx" />
+    <Content Include="view\newWorkingHour.aspx" />
     <Content Include="view\operation.aspx" />
     <Content Include="view\project.aspx" />
     <Content Include="view\task.aspx" />
@@ -279,6 +280,13 @@
     </Compile>
     <Compile Include="view\newTask.aspx.designer.cs">
       <DependentUpon>newTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\newWorkingHour.aspx.cs">
+      <DependentUpon>newWorkingHour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newWorkingHour.aspx.designer.cs">
+      <DependentUpon>newWorkingHour.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\operation.aspx.cs">
       <DependentUpon>operation.aspx</DependentUpon>
