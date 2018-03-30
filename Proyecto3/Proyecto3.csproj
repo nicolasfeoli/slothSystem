@@ -321,6 +321,10 @@
       <Project>{face82a4-9ba6-402e-920f-39c229787727}</Project>
       <Name>Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{ad7f7fb1-8ad3-47b0-8b65-480c18063bce}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{0a85f454-fed1-4538-b274-2c3ebf309013}</Project>
       <Name>Domain</Name>
