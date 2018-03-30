@@ -24,4 +24,9 @@ C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.dll
 C:\Users\Joseph Salas\source\repos\slothSystem\Data\obj\Debug\Data.pdb
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Util.dll
 C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\Util.pdb
-C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\bin\Debug\MySql.Data.xml
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Data\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Data\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Data\obj\Debug\Data.csproj.CopyComplete

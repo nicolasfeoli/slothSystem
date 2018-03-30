@@ -10,6 +10,7 @@ using System.Web.Configuration;
 using Util;
 using Business;
 
+
 namespace Proyecto3
 {
     public partial class Default : System.Web.UI.Page
@@ -18,6 +19,7 @@ namespace Proyecto3
 
         protected void Page_Load(object sender, EventArgs e)
         {
+
             analystBusiness = new AnalystBusiness();
             startingApplication();
         }

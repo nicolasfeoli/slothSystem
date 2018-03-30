@@ -27,13 +27,14 @@
         <div style="display: inline-block">
             <div class="line"></div>            
             <div class="line" id="menuBox">
-                <button type="submit" class="btn btn-default" id="btnOptions">Opciones</button><br /><br />                
+                <a href="/view/administrator.aspx" class="btn btn-default" id="btnOptions">Opciones</a><br /><br />                
                 <a href="/view/project.aspx" id="btn">Proyectos</a><br /><br />
                 <a href="/view/operation.aspx" id="btn">Operaciones</a><br /><br />
                 <a href="/view/task.aspx" id="btn">Tareas</a><br /><br />
                 <a href="/view/analystView.aspx" id="btn">Analistas</a><br /><br />
                 <a href="/view/collaborator.aspx" id="btn">Collaborator</a><br /><br />
                 <a href="/view/workingHours.aspx" id="btn">Horarios de trabajo</a><br /><br />                
+                <a href="/view/sampleAdministrator.aspx" id="btn">Ingresar muestra</a><br /><br />
                 <br /><br /><br />
             </div>
         </div>        

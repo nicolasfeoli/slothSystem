@@ -79,7 +79,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -328,6 +328,10 @@
     <ProjectReference Include="..\Business\Business.csproj">
       <Project>{face82a4-9ba6-402e-920f-39c229787727}</Project>
       <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{ad7f7fb1-8ad3-47b0-8b65-480c18063bce}</Project>
+      <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{0a85f454-fed1-4538-b274-2c3ebf309013}</Project>
