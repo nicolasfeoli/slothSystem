@@ -7,6 +7,7 @@ using Domain;
 using MySql.Data.MySqlClient;
 using Util;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Data
 {
@@ -14,23 +15,26 @@ namespace Data
     {
         public bool insertOperation(Operation operation)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_INSERT_OPERATION, conn))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_INSERT_OPERATION, cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("name", MySqlDbType.VarChar).Value = operation.Name;                
-                cmd.Parameters.Add("description", MySqlDbType.VarChar).Value = operation.Description;
+                cmd.Parameters.Add("name", SqlDbType.VarChar).Value = operation.Name;
+                cmd.Parameters.Add("description", SqlDbType.VarChar).Value = operation.Description;
 
-                cn.Open();
+                conn.Open();
+
                 if (cmd.ExecuteNonQuery() > 0)
                 {
+                    conn.Close();
                     return true;
                 }
                 else
                 {
+                    conn.Close();
                     return false;
                 }
-            }
+            }            
         }
     }
 }

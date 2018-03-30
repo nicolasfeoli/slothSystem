@@ -7,6 +7,7 @@ using Domain;
 using MySql.Data.MySqlClient;
 using Util;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace Data
 {
@@ -14,24 +15,27 @@ namespace Data
     {
         public bool insertNewWorkingHour(WorkingHour workingHour)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_INSERT_WORKING_HOUR, conn))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_INSERT_WORKING_HOUR, cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("hour", MySqlDbType.VarChar).Value = workingHour.Hour;
-                cmd.Parameters.Add("duration", MySqlDbType.VarChar).Value = workingHour.Duration;
-                cmd.Parameters.Add("description", MySqlDbType.VarChar).Value = workingHour.Description;
+                cmd.Parameters.Add("hour", SqlDbType.VarChar).Value = workingHour.Hour;
+                cmd.Parameters.Add("duration", SqlDbType.VarChar).Value = workingHour.Duration;
+                cmd.Parameters.Add("description", SqlDbType.VarChar).Value = workingHour.Description;
 
-                cn.Open();
+                conn.Open();
+
                 if (cmd.ExecuteNonQuery() > 0)
                 {
+                    conn.Close();
                     return true;
                 }
                 else
                 {
+                    conn.Close();
                     return false;
                 }
-            }
+            }            
         }
     }
 }

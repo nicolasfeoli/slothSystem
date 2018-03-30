@@ -29,7 +29,7 @@
                 
                 <label for="initialDate">Fecha de inicio</label>                
                 <asp:TextBox type="date" runat="server" class="form-control" id="initialDate"/>   
-                <br />                                                                 
+                <br /><br /><br />                                                            
             </div>
             <div class="form-control" style="float: right; width: 50%;">
                 <label for="sel1">Estado:</label><br />

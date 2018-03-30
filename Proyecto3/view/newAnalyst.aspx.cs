@@ -23,10 +23,10 @@ namespace Proyecto3.view
         {
             if (userPassword.Text.Equals(userPasswordConfirmation.Text))
             {
-                int role = 1;         
+                int role = 2;         
                 if (isAnalystCheckBox.Checked)
                 {
-                    role = 2;
+                    role = 1;
                 }
                 Analyst analyst = new Analyst(name.Text, userId.Text, userName.Text, userEmail.Text, role, userPassword.Text);
                 if (analystBusiness.insertAnalyst(analyst))

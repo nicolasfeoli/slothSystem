@@ -7,6 +7,7 @@ using Domain;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Util;
+using System.Data.SqlClient;
 
 namespace Data
 {
@@ -14,41 +15,27 @@ namespace Data
     {
         public bool insertCollaborator(Collaborator collaborator)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_INSERT_COLLABORATOR, conn))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_INSERT_COLLABORATOR, cn);
-                cmd.CommandType = CommandType.StoredProcedure;                
-                cmd.Parameters.Add("alias", MySqlDbType.VarChar).Value = collaborator.Alias;
-                cmd.Parameters.Add("position", MySqlDbType.VarChar).Value = collaborator.Position;
-                cmd.Parameters.Add("description", MySqlDbType.VarChar).Value = collaborator.Description;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("alias", SqlDbType.VarChar).Value = collaborator.Alias;
+                cmd.Parameters.Add("position", SqlDbType.VarChar).Value = collaborator.Position;
+                cmd.Parameters.Add("description", SqlDbType.VarChar).Value = collaborator.Description;
 
-                cn.Open();
+                conn.Open();
+
                 if (cmd.ExecuteNonQuery() > 0)
                 {
+                    conn.Close();
                     return true;
                 }
                 else
                 {
+                    conn.Close();
                     return false;
                 }
-            }
-        }
-
-        public DataTable getCollaborators()
-        {
-            /*
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
-            {
-                MySqlDataAdapter adp = new MySqlDataAdapter("SELECT idCOLLABORATOR, alias, position, description FROM COLLABORATOR", cn);                
-                DataTable dt = new DataTable();
-                adp.Fill(dt);
-                if (dt.Rows.Count > 0)
-                {                    
-                    return dt;
-                }
-            }
-            */
-            return null;
-        }
+            }            
+        }        
     }
 }

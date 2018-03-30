@@ -7,6 +7,7 @@ using Domain;
 using MySql.Data.MySqlClient;
 using System.Data;
 using Util;
+using System.Data.SqlClient;
 
 namespace Data
 {
@@ -14,24 +15,27 @@ namespace Data
     {
         public bool insertTask(Domain.Task task)
         {
-            using (MySqlConnection cn = new MySqlConnection(Utility.CONNECTION_STRING))
+            using (SqlConnection conn = new SqlConnection(Utility.CONNECTION_STRING))
+            using (SqlCommand cmd = new SqlCommand(Utility.SP_INSERT_TASK, conn))
             {
-                MySqlCommand cmd = new MySqlCommand(Utility.SP_INSERT_TASK, cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("name", MySqlDbType.VarChar).Value = task.Name;
-                cmd.Parameters.Add("activity", MySqlDbType.Enum).Value = task.Activity;
-                cmd.Parameters.Add("description", MySqlDbType.VarChar).Value = task.Description;
+                cmd.Parameters.Add("name", SqlDbType.VarChar).Value = task.Name;
+                cmd.Parameters.Add("activity", SqlDbType.VarChar).Value = task.Activity;
+                cmd.Parameters.Add("description", SqlDbType.VarChar).Value = task.Description;
 
-                cn.Open();
+                conn.Open();
+
                 if (cmd.ExecuteNonQuery() > 0)
                 {
+                    conn.Close();
                     return true;
                 }
                 else
                 {
+                    conn.Close();
                     return false;
                 }
-            }
+            }            
         }
     }
 }
