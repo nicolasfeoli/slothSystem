@@ -11,7 +11,21 @@ namespace Proyecto3.view
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //// Check whether the browser remains
+            //// connected to the server.
+            //if (Response.IsClientConnected)
+            //{
+            //    // If still connected, redirect
+            //    // to another page. 
+            //    Response.Redirect("analyst.aspx", false);
+            //}
+            //else
+            //{
+            //    // If the browser is not connected
+            //    // stop all response processing.
+            //    Response.End();
 
+            //}
         }
     }
 }

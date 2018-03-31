@@ -10,8 +10,8 @@
     margin: 0 16%;
 }
 
-#menuBox {    
-    width: 14%;    
+#menuBox {
+    width: 14%;
     border-top: 0.1em solid var(--main-bg-color);
     border-right: 0.1em solid var(--main-bg-color);
     border-bottom: none;
@@ -48,9 +48,9 @@
     background-color: white;
     color: var(--main-bg-color);
     font-weight: bold;
-    float: right;    
-    border-bottom: 0.1em solid var(--main-bg-color);    
-    border-left: 0.1em solid var(--main-bg-color);    
+    float: right;
+    border-bottom: 0.1em solid var(--main-bg-color);
+    border-left: 0.1em solid var(--main-bg-color);
     border-radius: 0;
 }
 
@@ -66,21 +66,21 @@
 }
 
 footer {
-    position:fixed;
-    bottom:0;    
+    position: fixed;
+    bottom: 0;
     width: 97%;
-    margin: 0 1%; 
+    margin: 0 1%;
 }
 
 #upperFooterDiv {
-    background-color: var(--gray-bg-color);        
+    background-color: var(--gray-bg-color);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
-#lowerFooterDiv{
+#lowerFooterDiv {
     background-color: var(--main-bg-color);
-    color: white;    
+    color: white;
     padding-top: 0.5em;
     padding-bottom: 1.5em;
 }
@@ -93,3 +93,24 @@ footer {
     border: 0.1em solid black;
     border-radius: 0.5em;
 }
+
+
+#labelTemp {
+    position: absolute;
+    left: 732px;
+    top: 115px;
+    width: 33px;
+}
+
+#TextTemp {
+    position: absolute;
+    left: 732px;
+    top: 115px;
+}
+
+#breadcrumbs {
+    width: 82%;
+    margin: 0 16%;
+}
+
+
