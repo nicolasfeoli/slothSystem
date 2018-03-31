@@ -10,40 +10,34 @@
             </ol>
         </nav>
     </div>
-    <div id="ContentDiv1">
-        <asp:Label runat="server"  ID="dangerAlert" class="alert alert-danger" Visible="false" Width="100%">
-            <strong><asp:Label runat="server" ID="alertDangerMessage"></asp:Label></strong>
-        </asp:Label><br /><br />
-        <asp:Label runat="server" ID="successAlert" class="alert alert-success" Visible="false" Width="100%">
-            <strong><asp:Label runat="server" ID="alertSuccessMessage"></asp:Label></strong>
-        </asp:Label>
-        <div id="divForm" style="width:100%;">            
-            <div class="form-control" style="float: left; width: 100%;">                                                                                    
-                    <div style="width:30%;">
-                        <label for="projects" style="float:left;">Hora</label>    
-                        <br /><br />
-                        <div style="width:40%; float: left;">
-                            <asp:TextBox runat="server" TextMode="Time" class="form-control" min="0" max="24" id="hour"/>  
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="hour" ErrorMessage="Ingrese los minutos" ForeColor="Red"></asp:RequiredFieldValidator>                      
-                        </div>                        
-                        <br /><br /><br />
-                        <label for="projects" style="float:left;">Duración</label>    
-                        <br /><br />
-                        <div style="width:40%; float: left;">
-                            <asp:TextBox runat="server" type="number" class="form-control" min="0" max="60" id="duration"/>   
-                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="duration" ErrorMessage="Ingrese los minutos" ForeColor="Red"></asp:RequiredFieldValidator>                                           
-                        </div>
-                    </div>
-                    <br /><br />                    
-                    <div class="form-group" style="width:30%;">
-                        <br />
-                        <label for="description" style="float:left;">Descripción:</label>
-                        <asp:textbox runat="server" TextMode="multiline" class="form-control" Rows="5" Columns="7" id="description"></asp:textbox>
-                    </div> 
-
-                    <asp:Button runat="server" Text="Guardar" style="float: left;" cssClass="btnSave" ID="Button1" OnClick="saveWorkinHour"/>
-                    <br /><br /><br />                                     
-                </div>                         
-            </div>
-        </div>                   
+    <div id="ContentDiv1">    
+        <a href="/view/newWorkingHour.aspx" id="linkNew">Nuevo horario de descanso</a>
+        <br /><br />                
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="idHOUR" DataSourceID="WorkingHourDataView"
+            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
+            <Columns>                        
+                <asp:BoundField Visible="false" DataField="idHOUR" HeaderText="Código" InsertVisible="False" ReadOnly="True" SortExpression="idHOUR" />
+                <asp:BoundField DataField="hour" HeaderText="Hora" SortExpression="hour" />
+                <asp:BoundField DataField="duration" HeaderText="Duración" SortExpression="duration" />
+                <asp:BoundField DataField="description" HeaderText="Descripción" SortExpression="description" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Acciones"/>
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="WorkingHourDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [HOUR] WHERE [idHOUR] = @idHOUR" InsertCommand="INSERT INTO [HOUR] ([hour], [duration], [description]) VALUES (@hour, @duration, @description)" SelectCommand="SELECT * FROM [HOUR]" UpdateCommand="UPDATE [HOUR] SET [hour] = @hour, [duration] = @duration, [description] = @description WHERE [idHOUR] = @idHOUR">
+            <DeleteParameters>
+                <asp:Parameter Name="idHOUR" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter DbType="Time" Name="hour" />
+                <asp:Parameter Name="duration" Type="Int32" />
+                <asp:Parameter Name="description" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter DbType="Time" Name="hour" />
+                <asp:Parameter Name="duration" Type="Int32" />
+                <asp:Parameter Name="description" Type="String" />
+                <asp:Parameter Name="idHOUR" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+    </div>                               
 </asp:Content>

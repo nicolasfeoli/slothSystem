@@ -211,12 +211,12 @@ a:hover {
     margin: 10% auto;
 }
 
-.form-group{    
+#divLoggin{    
     width: 15%;
     margin: 0 auto;
-}
+}    
 
-.form-group label{
+#divLoggin label{
       color: var(--main-bg-color);
       font-family: 'Krona One', serif;
 }

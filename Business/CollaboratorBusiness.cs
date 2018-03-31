@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using MySql.Data.MySqlClient;
 using Util;
 using Data;
 
@@ -22,11 +21,6 @@ namespace Business
         public bool insertCollaborator(Collaborator collaborator)
         {
             return collaboratorData.insertCollaborator(collaborator);
-        }
-
-        public DataTable getCollaborators()
-        {
-            return collaboratorData.getCollaborators();
-        }
+        }        
     }
 }

@@ -9,13 +9,15 @@
             </ol>
         </nav>
     </div>
-    <div id="ContentDiv1">
-        <asp:GridView ID="ProyectoView" runat="server"  HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
-        <rowstyle Height="50px" />
-        <alternatingrowstyle  Height="50px"/>
+    <div id="ContentDiv1">               
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ProjectAdministratorView"
+            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
+            <Columns>
+                <asp:CommandField ShowSelectButton="True" />
+                <asp:BoundField DataField="name" HeaderText="Nombre" SortExpression="name" />
+                <asp:BoundField DataField="status" HeaderText="Estado" SortExpression="status" />
+            </Columns>
         </asp:GridView>
-        <br /><br /><br /><br />
-        <asp:Button ID="openProyect" cssClass= "buttonOpen" runat="server" Text="Abrir Proyecto"/>
-        
+        <asp:SqlDataSource ID="ProjectAdministratorView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" SelectCommand="SELECT [name], [status] FROM [PROJECT]"></asp:SqlDataSource>                
     </div>  
 </asp:Content>

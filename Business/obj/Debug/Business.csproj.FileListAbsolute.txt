@@ -1,0 +1,38 @@
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Business.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Business.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Data.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Domain.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Data.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\bin\Debug\Domain.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\obj\Debug\Business.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\Proyecto3\Business\obj\Debug\Business.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Business.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Business.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Data.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Domain.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Data.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Domain.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\obj\Debug\Business.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\obj\Debug\Business.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Business.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Business.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Data.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Domain.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Data.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Domain.pdb
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\bin\Debug\Domain.dll.config
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.dll
+C:\Users\Joseph Salas\source\repos\slothSystem\Business\obj\Debug\Business.pdb
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Util.dll
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\bin\Debug\Util.pdb
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Business\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Business\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nelson\documents\visual studio 2015\Projects\SlothSystem\Business\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Nelson\Documents\Visual Studio 2015\Projects\SlothSystem\Business\obj\Debug\Business.csproj.CopyComplete

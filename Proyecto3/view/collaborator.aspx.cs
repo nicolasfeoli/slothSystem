@@ -14,6 +14,7 @@ namespace Proyecto3.view
         private CollaboratorBusiness collaboratorBusiness;
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
             collaboratorBusiness = new CollaboratorBusiness();
             DataTable dt = collaboratorBusiness.getCollaborators();
             if (dt.Rows.Count > 0)
@@ -22,6 +23,7 @@ namespace Proyecto3.view
                 CollaboratorsView.DataBind();
                 System.Diagnostics.Debug.WriteLine(CollaboratorsView.DataKeys[0].Value);
             }
+            */
         }
     }
 }
