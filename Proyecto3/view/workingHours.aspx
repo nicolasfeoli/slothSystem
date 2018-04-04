@@ -23,7 +23,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Acciones"/>
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="WorkingHourDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [HOUR] WHERE [idHOUR] = @idHOUR" InsertCommand="INSERT INTO [HOUR] ([hour], [duration], [description]) VALUES (@hour, @duration, @description)" SelectCommand="SELECT * FROM [HOUR]" UpdateCommand="UPDATE [HOUR] SET [hour] = @hour, [duration] = @duration, [description] = @description WHERE [idHOUR] = @idHOUR">
+        <asp:SqlDataSource ID="WorkingHourDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" DeleteCommand="DELETE FROM [HOUR] WHERE [idHOUR] = @idHOUR" InsertCommand="INSERT INTO [HOUR] ([hour], [duration], [description]) VALUES (@hour, @duration, @description)" SelectCommand="SELECT * FROM [HOUR]" UpdateCommand="UPDATE [HOUR] SET [hour] = @hour, [duration] = @duration, [description] = @description WHERE [idHOUR] = @idHOUR">
             <DeleteParameters>
                 <asp:Parameter Name="idHOUR" Type="Int32" />
             </DeleteParameters>

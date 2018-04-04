@@ -25,7 +25,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Acciones"/>
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="ProjectDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [PROJECT] WHERE [idPROJECT] = @idPROJECT" InsertCommand="INSERT INTO [PROJECT] ([name], [status], [location], [initialDate], [description]) VALUES (@name, @status, @location, @initialDate, @description)" SelectCommand="SELECT * FROM [PROJECT]" UpdateCommand="UPDATE [PROJECT] SET [name] = @name, [status] = @status, [location] = @location, [initialDate] = @initialDate, [description] = @description WHERE [idPROJECT] = @idPROJECT">
+        <asp:SqlDataSource ID="ProjectDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" DeleteCommand="DELETE FROM [PROJECT] WHERE [idPROJECT] = @idPROJECT" InsertCommand="INSERT INTO [PROJECT] ([name], [status], [location], [initialDate], [description]) VALUES (@name, @status, @location, @initialDate, @description)" SelectCommand="SELECT * FROM [PROJECT]" UpdateCommand="UPDATE [PROJECT] SET [name] = @name, [status] = @status, [location] = @location, [initialDate] = @initialDate, [description] = @description WHERE [idPROJECT] = @idPROJECT">
             <DeleteParameters>
                 <asp:Parameter Name="idPROJECT" Type="Int32" />
             </DeleteParameters>

@@ -22,7 +22,7 @@
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Acciones"/>
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="OperationDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [OPERATION] WHERE [idOPERATION] = @idOPERATION" InsertCommand="INSERT INTO [OPERATION] ([name], [description]) VALUES (@name, @description)" SelectCommand="SELECT * FROM [OPERATION]" UpdateCommand="UPDATE [OPERATION] SET [name] = @name, [description] = @description WHERE [idOPERATION] = @idOPERATION">
+        <asp:SqlDataSource ID="OperationDataView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" DeleteCommand="DELETE FROM [OPERATION] WHERE [idOPERATION] = @idOPERATION" InsertCommand="INSERT INTO [OPERATION] ([name], [description]) VALUES (@name, @description)" SelectCommand="SELECT * FROM [OPERATION]" UpdateCommand="UPDATE [OPERATION] SET [name] = @name, [description] = @description WHERE [idOPERATION] = @idOPERATION">
             <DeleteParameters>
                 <asp:Parameter Name="idOPERATION" Type="Int32" />
             </DeleteParameters>

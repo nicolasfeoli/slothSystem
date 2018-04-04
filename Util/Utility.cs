@@ -26,7 +26,9 @@ namespace Util
         public static string DEFAULT_PAGE = "/default.aspx";
 
         //public static string CONNECTION_STRING = "Data source=163.178.173.144;Database=Sloth-System-DB;User Id=multi-paraiso;Password=multimedios.rp.2017;";
-        public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DBConnectionStringSQLServer"].ConnectionString;
+        //public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DBConnectionStringSQLServer"].ConnectionString;
+        public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DB_TURRIALBA"].ConnectionString;
+
 
         public static string SP_INSERT_PROJECT = "sp_insert_project";
         public static string SP_INSERT_COLLABORATOR = "sp_insert_collaborator";

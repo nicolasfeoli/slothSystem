@@ -18,6 +18,6 @@
                 <asp:BoundField DataField="status" HeaderText="Estado" SortExpression="status" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="ProjectAdministratorView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" SelectCommand="SELECT [name], [status] FROM [PROJECT]"></asp:SqlDataSource>                
+        <asp:SqlDataSource ID="ProjectAdministratorView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="SELECT [name], [status] FROM [PROJECT]"></asp:SqlDataSource>                
     </div>  
 </asp:Content>

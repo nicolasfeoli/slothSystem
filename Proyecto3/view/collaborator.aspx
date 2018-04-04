@@ -23,7 +23,7 @@
                 <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" HeaderText="Acciones"/>
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="CollaboratorSelectDB" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DBConnectionStringSQLServer %>" DeleteCommand="DELETE FROM [COLLABORATOR] WHERE [idCOLLABORATOR] = @idCOLLABORATOR" InsertCommand="INSERT INTO [COLLABORATOR] ([alias], [position], [description]) VALUES (@alias, @position, @description)" SelectCommand="SELECT * FROM [COLLABORATOR]" UpdateCommand="UPDATE [COLLABORATOR] SET [alias] = @alias, [position] = @position, [description] = @description WHERE [idCOLLABORATOR] = @idCOLLABORATOR">
+        <asp:SqlDataSource ID="CollaboratorSelectDB" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" DeleteCommand="DELETE FROM [COLLABORATOR] WHERE [idCOLLABORATOR] = @idCOLLABORATOR" InsertCommand="INSERT INTO [COLLABORATOR] ([alias], [position], [description]) VALUES (@alias, @position, @description)" SelectCommand="SELECT * FROM [COLLABORATOR]" UpdateCommand="UPDATE [COLLABORATOR] SET [alias] = @alias, [position] = @position, [description] = @description WHERE [idCOLLABORATOR] = @idCOLLABORATOR">
             <DeleteParameters>
                 <asp:Parameter Name="idCOLLABORATOR" Type="Int32" />
             </DeleteParameters>
