@@ -171,6 +171,7 @@
     <Content Include="css\administrator.css" />
     <Content Include="view\about.aspx" />
     <Content Include="view\administrator.aspx" />
+    <Content Include="view\analyst.aspx" />
     <Content Include="view\analystView.aspx" />
     <Content Include="view\asignAnalyst.aspx" />
     <Content Include="view\collaborator.aspx" />
@@ -223,6 +224,13 @@
     </Compile>
     <Compile Include="view\administrator.aspx.designer.cs">
       <DependentUpon>administrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\analyst.aspx.cs">
+      <DependentUpon>analyst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\analyst.aspx.designer.cs">
+      <DependentUpon>analyst.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\analystView.aspx.cs">
       <DependentUpon>analystView.aspx</DependentUpon>
