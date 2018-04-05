@@ -221,4 +221,11 @@ a:hover {
 
 #buttonLoggin{
     text-align: center;   
-} 
+}
+
+#divProjectsView {
+    
+    width: 100%;
+    color: var(--main-bg-color);
+    font-family: 'Krona One', serif;
+}

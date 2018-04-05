@@ -10,9 +10,11 @@
             </ol>
         </nav>
     </div>
-    <div id="ContentDiv1">  
-        <asp:Label ID="projectName" runat="server" ></asp:Label><br />
-        <asp:Label ID="projectStatus" runat="server" ></asp:Label>
-        <asp:Label ID="projectLocation" runat="server" ></asp:Label>
+    <div id="ContentDiv1">                   
+        <asp:Label ID="projectName" runat="server" ></asp:Label><br /><br />
+        <div id="divProjectsView">             
+            <asp:Label ID="projectStatus" runat="server" style="width:50%;  float:left"></asp:Label>
+            <asp:Label ID="projectLocation" runat="server" style="width:50%;  float:right"></asp:Label>            
+        </div>
     </div>
 </asp:Content>
