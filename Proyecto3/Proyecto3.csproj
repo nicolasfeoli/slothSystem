@@ -183,6 +183,7 @@
     <Content Include="view\newWorkingHour.aspx" />
     <Content Include="view\operation.aspx" />
     <Content Include="view\project.aspx" />
+    <Content Include="view\projectSelected.aspx" />
     <Content Include="view\task.aspx" />
     <Content Include="view\userGuide.aspx" />
     <Content Include="view\workingHours.aspx" />
@@ -308,6 +309,13 @@
     </Compile>
     <Compile Include="view\project.aspx.designer.cs">
       <DependentUpon>project.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\projectSelected.aspx.cs">
+      <DependentUpon>projectSelected.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\projectSelected.aspx.designer.cs">
+      <DependentUpon>projectSelected.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\task.aspx.cs">
       <DependentUpon>task.aspx</DependentUpon>

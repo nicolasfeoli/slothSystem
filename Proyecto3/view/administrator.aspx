@@ -9,15 +9,27 @@
             </ol>
         </nav>
     </div>
+    <style type="text/css">
+         .hidden
+         {
+             display:none;
+         }
+    </style>
     <div id="ContentDiv1">               
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ProjectAdministratorView"
-            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ProjectAdministratorView" 
+            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="idPROJECT" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="name" HeaderText="Nombre" SortExpression="name" />
-                <asp:BoundField DataField="status" HeaderText="Estado" SortExpression="status" />
+                <asp:BoundField DataField="idPROJECT" HeaderText="Código" SortExpression="idPROJECT" HeaderStyle-CssClass="hidden"  >                   
+                    <ItemStyle CssClass="hidden"/>
+                </asp:BoundField>                
+                <asp:BoundField DataField="name" HeaderText="Nombre" SortExpression="name"/>
+                <asp:BoundField DataField="status" HeaderText="Estado" SortExpression="status" />                
+                <asp:BoundField DataField="location" HeaderText="Ubicación" SortExpression="location" HeaderStyle-CssClass="hidden">
+                    <ItemStyle CssClass="hidden"/>
+                </asp:BoundField>
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="ProjectAdministratorView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="SELECT [name], [status] FROM [PROJECT]"></asp:SqlDataSource>                
+        <asp:SqlDataSource ID="ProjectAdministratorView" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="SELECT [name], [status], [idPROJECT], [location] FROM [PROJECT]"></asp:SqlDataSource>                        
     </div>  
 </asp:Content>

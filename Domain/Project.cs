@@ -93,6 +93,14 @@ namespace Domain
             }
         }
 
+        public Project(int id, string name, string status, string location)
+        {
+            this.id = id;
+            this.name = name;
+            this.status = status;
+            this.location = location;
+        }
+
         public Project(int id, string name, string status, string location, string description, string initialDate)
         {
             this.id = id;
