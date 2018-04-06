@@ -69,8 +69,10 @@
 }
 
 footer {
+    position: absolute;
+    bottom: 0;
     width: 97%;
-    margin: 0 1%; 
+    margin: 0 1%;
 }
 
 #upperFooterDiv {
@@ -224,8 +226,17 @@ a:hover {
 }
 
 #divProjectsView {
-    
     width: 100%;
+    color: var(--main-bg-color);
+    font-family: 'Krona One', serif;
+}
+
+#label {
+    color: var(--main-bg-color);
+    font-family: 'Krona One', serif;
+}
+
+.labelProjectName {
     color: var(--main-bg-color);
     font-family: 'Krona One', serif;
 }

@@ -48,14 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalystData.cs" />
-    <Compile Include="ApiCall.cs" />
     <Compile Include="CollaboratorData.cs" />
     <Compile Include="OperationData.cs" />
     <Compile Include="ProjectData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProvinceName.cs" />
     <Compile Include="TaskData.cs" />
-    <Compile Include="WeatherInfo.cs" />
     <Compile Include="WorkinHourData.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -25,6 +25,7 @@ namespace Util
         public static string WORKING_HOURS_PAGE = "/view/workingHours.aspx";
         public static string DEFAULT_PAGE = "/default.aspx";
         public static string PROJECT_SELECTED_PAGE = "/view/projectSelected.aspx";
+        public static string PROJECT_SELECTED_BY_ANALYST_PAGE = "/view/projectSelectedByAnalyst.aspx";
 
         //public static string CONNECTION_STRING = "Data source=163.178.173.144;Database=Sloth-System-DB;User Id=multi-paraiso;Password=multimedios.rp.2017;";
         //public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DBConnectionStringSQLServer"].ConnectionString;

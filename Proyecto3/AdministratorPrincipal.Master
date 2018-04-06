@@ -21,7 +21,7 @@
             <a href="/view/administrator.aspx" id="aLinkLogo"><asp:label ID="Label1" runat="server">SLOTH SYSTEM</asp:label> </a>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
             <a href="/view/administrator.aspx"><asp:Image ID="imageLogo" runat="server" src="../images/logo.png"/></a>            
-            <asp:Button runat="server" Text="Cerrar sessión" cssClass="btnLogOut" ID="btnLogOut" OnClick="Button_LogOut" CausesValidation="false"/>            
+            <asp:Button runat="server" Text="Cerrar sesión" cssClass="btnLogOut" ID="btnLogOut" OnClick="Button_LogOut" CausesValidation="false"/>            
         </div>  
         <br />
         <div style="display: inline-block">

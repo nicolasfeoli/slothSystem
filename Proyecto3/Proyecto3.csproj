@@ -179,11 +179,13 @@
     <Content Include="view\newCollaborator.aspx" />
     <Content Include="view\newOperation.aspx" />
     <Content Include="view\newProject.aspx" />
+    <Content Include="view\newSample.aspx" />
     <Content Include="view\newTask.aspx" />
     <Content Include="view\newWorkingHour.aspx" />
     <Content Include="view\operation.aspx" />
     <Content Include="view\project.aspx" />
     <Content Include="view\projectSelected.aspx" />
+    <Content Include="view\ProjectSelectedByAnalyst.aspx" />
     <Content Include="view\task.aspx" />
     <Content Include="view\userGuide.aspx" />
     <Content Include="view\workingHours.aspx" />
@@ -282,6 +284,13 @@
     <Compile Include="view\newProject.aspx.designer.cs">
       <DependentUpon>newProject.aspx</DependentUpon>
     </Compile>
+    <Compile Include="view\newSample.aspx.cs">
+      <DependentUpon>newSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\newSample.aspx.designer.cs">
+      <DependentUpon>newSample.aspx</DependentUpon>
+    </Compile>
     <Compile Include="view\newTask.aspx.cs">
       <DependentUpon>newTask.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -316,6 +325,13 @@
     </Compile>
     <Compile Include="view\projectSelected.aspx.designer.cs">
       <DependentUpon>projectSelected.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\ProjectSelectedByAnalyst.aspx.cs">
+      <DependentUpon>ProjectSelectedByAnalyst.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\ProjectSelectedByAnalyst.aspx.designer.cs">
+      <DependentUpon>ProjectSelectedByAnalyst.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\task.aspx.cs">
       <DependentUpon>task.aspx</DependentUpon>

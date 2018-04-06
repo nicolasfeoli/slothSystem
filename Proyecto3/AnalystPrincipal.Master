@@ -7,46 +7,52 @@
     <title>Sloth System</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krona+One"/>  
     <link href="Content/bootstrap.css" rel="stylesheet" />  
-    <link href="css/analyst.css" rel="stylesheet" type="text/css"/>                
+    <link href="css/administrator.css" rel="stylesheet" type="text/css"/>                
     <link rel="shortcut icon" href="images/logo.ico" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header>
+    <form id="form2" runat="server">
+        <header>
         <br />
         <div id="tittleLogo" >            
-            <asp:label ID="Label1" runat="server">SLOTH SYSTEM</asp:label> 
+            <a href="/view/analyst.aspx" id="aLinkLogo"><asp:label ID="Label1" runat="server">SLOTH SYSTEM</asp:label> </a>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   
-            <asp:Image ID="imageLogo" runat="server" src="../images/logo.png"/>
-            <button type="submit" class="btn btn-default" id="btnLogOut">Cerrar sesión</button>
+            <a href="/view/analyst.aspx"><asp:Image ID="imageLogo" runat="server" src="../images/logo.png"/></a>            
+            <asp:Button runat="server" Text="Cerrar sesión" cssClass="btnLogOut" ID="btnLogOut" OnClick="Button_LogOut" CausesValidation="false"/>            
         </div>  
         <br />
         <div style="display: inline-block">
             <div class="line"></div>
             <div class="line" id="menuBox">
-                <button type="submit" class="btn btn-default" id="btnOptions">Opciones</button><br /><br />
-                <button type="submit" class="btn btn-default" id="btn">Horas de muestreo</button><br /><br />
-                <button type="submit" class="btn btn-default" id="btn">Proyectos</button><br /><br />                
+                <a href="/view/analyst.aspx" class="btn btn-default" id="btnOptions">Opciones</a><br /><br />                
+                <a href="/view/newSample.aspx" id="btn">Ingresar muestreo</a><br /><br />
+                <a href="/view/sampleHours.aspx" id="btn">Horario de muestreo</a><br /><br />     
                 <br /><br /><br />
             </div>
         </div>        
-    </header>
-    <form id="form1" runat="server">
+        </header>
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">      
+            
         </asp:ContentPlaceHolder>
     </div>
-    </form>
+    </form>    
     <footer>
         <div id="upperFooterDiv">&nbsp&nbsp&nbsp&nbsp SLOTH SYSTEM</div>        
         <div id="lowerFooterDiv">
+            <div>
+                <form action="/view/about.aspx" method="get">
+                    <button type="submit" class="btn btn-default" id="btnFooter">Acerca de</button>
+                </form>
+                <form action="/view/userGuide.aspx" method="get">
+                    <button type="submit" class="btn btn-default" id="btnFooter">Manual de usuario</button>            
+                </form>            
+            </div>
             &nbsp&nbsp&nbsp&nbsp
-            Requerimientos de Software - TEC 2018 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Correo  de soporte: soporteSloth@gmail.com            
-            <button type="submit" class="btn btn-default" id="btnFooter">Acerca de</button>
-            <button type="submit" class="btn btn-default" id="btnFooter">Manual de usuario</button>            
+            Requerimientos de Software - TEC 2018 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Correo  de soporte: soporteSloth@gmail.com                        
         </div>
     </footer>
 </body>

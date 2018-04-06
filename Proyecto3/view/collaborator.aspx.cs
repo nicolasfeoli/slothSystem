@@ -11,7 +11,7 @@ namespace Proyecto3.view
 {
     public partial class collaborator : System.Web.UI.Page
     {
-        private CollaboratorBusiness collaboratorBusiness;
+        //private CollaboratorBusiness collaboratorBusiness;
         protected void Page_Load(object sender, EventArgs e)
         {
             /*

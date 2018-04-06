@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Business
 {
-    class ProvinceName
+    public class ProvinceName
     {
         public string name { get; set; }
         public WeatherInfo main { get; set; }

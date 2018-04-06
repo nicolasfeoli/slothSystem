@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Business
 {
-    class WeatherInfo
+    public class WeatherInfo
     {
         public string temp { get; set; }
         public string humidity { get; set; }

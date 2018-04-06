@@ -7,63 +7,63 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Proyecto3 {
+namespace Proyecto3.view {
     
     
-    public partial class analystPrincipal {
+    public partial class ProjectSelectedByAnalyst {
         
         /// <summary>
-        /// Control head.
+        /// Control projectName.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Label projectName;
         
         /// <summary>
-        /// Control form2.
+        /// Control projectStatus.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
+        protected global::System.Web.UI.WebControls.Label projectStatus;
         
         /// <summary>
-        /// Control Label1.
+        /// Control projectLocation.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label projectLocation;
         
         /// <summary>
-        /// Control imageLogo.
+        /// Control searchDate.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imageLogo;
+        protected global::System.Web.UI.WebControls.TextBox searchDate;
         
         /// <summary>
-        /// Control btnLogOut.
+        /// Control OperationsSQLConsult.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogOut;
+        protected global::System.Web.UI.WebControls.SqlDataSource OperationsSQLConsult;
         
         /// <summary>
-        /// Control ContentPlaceHolder1.
+        /// Control DropDownList1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
     }
 }

@@ -7,14 +7,15 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Data
+namespace Business
 {
-    class ApiCall
+    public class ApiCall
     {
-        public static string ProvinceName { get; private set; }
-        public static string provinceTempeture { get; private set; }
-        public static string provinceHumidity { get; private set; }
-        static async Task WeatherApi(string placeName)
+        public static ProvinceName provinceName;
+        public static string ProvinceTempeture { get; private set; }
+        public static string ProvinceHumidity { get; private set; }
+
+        public static async Task WeatherApi(string placeName)
         {
             using (var client = new HttpClient())
             {
@@ -27,22 +28,17 @@ namespace Data
                 if (respon.StatusCode == HttpStatusCode.OK)
                 {
                     //String kq = await respon.Content.ReadAsStringAsync();
-                    //Console.Write(kq);
+                    //System.Diagnostics.Debug.Write(kq);                    
                     ProvinceName province = respon.Content.ReadAsAsync<ProvinceName>().Result;
-                    Console.WriteLine("Nombre de lugar: " + province.name);
-                    ProvinceName = province.name;
-                    Console.WriteLine("humidity: " + province.main.humidity);
-                    provinceHumidity = province.main.humidity;
-                    Console.WriteLine("tempeture: " + province.main.temp);
-                    provinceTempeture = province.main.temp;
-
+                    System.Diagnostics.Debug.Write("Nombre de lugar: " + province.name);
+                    provinceName.name = province.name;
+                    System.Diagnostics.Debug.Write("humidity: " + province.main.humidity);                    
+                    province.main.humidity = province.main.humidity;
+                    System.Diagnostics.Debug.Write("tempeture: " + province.main.temp);                   
+                    province.main.temp = province.main.temp;
                 }
-
                 Console.ReadKey();
             }
-        }
-        
-
-
+        }       
     }
 }

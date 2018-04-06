@@ -15,15 +15,15 @@
              display:none;
          }
     </style>
-    <div id="ContentDiv1">               
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ProjectAdministratorView" 
-            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" DataKeyNames="idPROJECT" OnRowCommand="GridView1_RowCommand">
+    <div id="ContentDiv1">             
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idPROJECT" DataSourceID="ProjectAdministratorView" 
+            HorizontalAlign="Center" CssClass="table table-striped table-bordered table-hover" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" OnRowCommand="GridView1_RowCommand">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="idPROJECT" HeaderText="Código" SortExpression="idPROJECT" HeaderStyle-CssClass="hidden"  >                   
+                <asp:BoundField DataField="idPROJECT" HeaderText="Código" SortExpression="idPROJECT" HeaderStyle-CssClass="hidden">                   
                     <ItemStyle CssClass="hidden"/>
                 </asp:BoundField>                
-                <asp:BoundField DataField="name" HeaderText="Nombre" SortExpression="name"/>
+                <asp:BoundField DataField="name" HeaderText="Nombre" SortExpression="name" />
                 <asp:BoundField DataField="status" HeaderText="Estado" SortExpression="status" />                
                 <asp:BoundField DataField="location" HeaderText="Ubicación" SortExpression="location" HeaderStyle-CssClass="hidden">
                     <ItemStyle CssClass="hidden"/>

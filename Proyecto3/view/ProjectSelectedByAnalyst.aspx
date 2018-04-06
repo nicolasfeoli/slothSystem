@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdministratorPrincipal.Master" AutoEventWireup="true" CodeBehind="projectSelected.aspx.cs" Inherits="Proyecto3.view.projectSelected" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AnalystPrincipal.Master" AutoEventWireup="true" CodeBehind="ProjectSelectedByAnalyst.aspx.cs" Inherits="Proyecto3.view.ProjectSelectedByAnalyst" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="breadcrumbs">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">    
-                <li class="breadcrumb-item"><a href="/view/administrator.aspx">Principal</a></li>                
+                <li class="breadcrumb-item"><a href="/view/analyst.aspx">Principal</a></li>                
                 <li class="breadcrumb-item active" aria-current="page">Vista del projecto</li>
             </ol>
         </nav>

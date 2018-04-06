@@ -9,11 +9,11 @@ using Util;
 
 namespace Proyecto3.view
 {
-    public partial class projectSelected : System.Web.UI.Page
+    public partial class ProjectSelectedByAnalyst : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session[Utility.PROJECT_SELECTED] != null)
+            if (Session[Utility.PROJECT_SELECTED] != null)
             {
                 Project projectSelected = (Project)Session[Utility.PROJECT_SELECTED];
                 projectName.Text = "Projecto: " + projectSelected.Name;
