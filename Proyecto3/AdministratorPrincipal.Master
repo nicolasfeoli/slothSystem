@@ -45,7 +45,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>
-    <footer>
+    <footer id="footerAdministrator">
         <div id="upperFooterDiv">&nbsp&nbsp&nbsp&nbsp SLOTH SYSTEM</div>        
         <div id="lowerFooterDiv">
             <div>

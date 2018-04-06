@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnalystData.cs" />
+    <Compile Include="SampleData.cs" />
     <Compile Include="CollaboratorData.cs" />
     <Compile Include="OperationData.cs" />
     <Compile Include="ProjectData.cs" />

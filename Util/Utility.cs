@@ -14,8 +14,8 @@ namespace Util
         public static string USER_ROLE = "UserRole";
         public static int ADMIN_ROLE = 1;
         public static int ANALYST_ROLE = 2;
-        public static string ADMINISTRATOR_PRINCIPAL_PAGE = "view/administrator.aspx";
-        public static string ANALYST_PRINCIPAL_PAGE = "view/analyst.aspx";
+        public static string ADMINISTRATOR_PRINCIPAL_PAGE = "/view/administrator.aspx";
+        public static string ANALYST_PRINCIPAL_PAGE = "/view/analyst.aspx";
 
         public static string PROJECTS_PAGE = "/view/project.aspx";
         public static string ANALYST_PAGE = "/view/analystView.aspx";
@@ -25,12 +25,11 @@ namespace Util
         public static string WORKING_HOURS_PAGE = "/view/workingHours.aspx";
         public static string DEFAULT_PAGE = "/default.aspx";
         public static string PROJECT_SELECTED_PAGE = "/view/projectSelected.aspx";
-        public static string PROJECT_SELECTED_BY_ANALYST_PAGE = "/view/projectSelectedByAnalyst.aspx";
+        public static string PROJECT_SELECTED_BY_ANALYST_PAGE = "/view/projectSelectedByAnalyst.aspx";        
 
         //public static string CONNECTION_STRING = "Data source=163.178.173.144;Database=Sloth-System-DB;User Id=multi-paraiso;Password=multimedios.rp.2017;";
         //public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DBConnectionStringSQLServer"].ConnectionString;
         public static string CONNECTION_STRING = ConfigurationManager.ConnectionStrings["SLOTH_SYSTEM_DB_TURRIALBA"].ConnectionString;
-
 
         public static string SP_INSERT_PROJECT = "sp_insert_project";
         public static string SP_INSERT_COLLABORATOR = "sp_insert_collaborator";
@@ -40,8 +39,10 @@ namespace Util
         public static string SP_INSERT_WORKING_HOUR = "sp_insert_working_hour";
         public static string SP_VALIDATE_PASSWORD = "validate_password";
         public static string SP_GET_USER_ROLE = "sp_get_user_role";
+        public static string SP_INSERT_SAMPLE = "sp_new_sample";
 
         public static string SELECT_COMMAND = "Select";
         public static string PROJECT_SELECTED = "projectSelected";
+        public static string SAMPLE_HOUR = "sample_hour";
     }
 }

@@ -9,6 +9,7 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />  
     <link href="css/administrator.css" rel="stylesheet" type="text/css"/>                
     <link rel="shortcut icon" href="images/logo.ico" />
+    
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -29,7 +30,7 @@
             <div class="line" id="menuBox">
                 <a href="/view/analyst.aspx" class="btn btn-default" id="btnOptions">Opciones</a><br /><br />                
                 <a href="/view/newSample.aspx" id="btn">Ingresar muestreo</a><br /><br />
-                <a href="/view/sampleHours.aspx" id="btn">Horario de muestreo</a><br /><br />     
+                <a href="/view/ProjectSelectedByAnalyst.aspx" id="btn">Horario de muestreo</a><br /><br />     
                 <br /><br /><br />
             </div>
         </div>        
@@ -40,7 +41,7 @@
         </asp:ContentPlaceHolder>
     </div>
     </form>    
-    <footer>
+    <footer id="footerAnalyst">
         <div id="upperFooterDiv">&nbsp&nbsp&nbsp&nbsp SLOTH SYSTEM</div>        
         <div id="lowerFooterDiv">
             <div>

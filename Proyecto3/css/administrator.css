@@ -68,15 +68,21 @@
     background-color: var(--gray-bg-color);
 }
 
-footer {
+#footerAdministrator {
+    height: 4em;
     position: absolute;
     bottom: 0;
+    margin-left: 1%;
     width: 97%;
-    margin: 0 1%;
+}
+
+#footerAnalyst {
+    margin-left: 1%;
+    width: 97%;
 }
 
 #upperFooterDiv {
-    background-color: var(--gray-bg-color);    
+    background-color: var(--gray-bg-color);
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }

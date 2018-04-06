@@ -52,6 +52,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Sample.cs" />
     <Compile Include="Task.cs" />
     <Compile Include="WorkingHour.cs" />
   </ItemGroup>

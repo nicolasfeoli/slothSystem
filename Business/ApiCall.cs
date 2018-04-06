@@ -11,7 +11,7 @@ namespace Business
 {
     public class ApiCall
     {
-        public static ProvinceName provinceName;
+        public static ProvinceName provinceName = new ProvinceName();
         public static string ProvinceTempeture { get; private set; }
         public static string ProvinceHumidity { get; private set; }
 
@@ -30,7 +30,7 @@ namespace Business
                     //String kq = await respon.Content.ReadAsStringAsync();
                     //System.Diagnostics.Debug.Write(kq);                    
                     ProvinceName province = respon.Content.ReadAsAsync<ProvinceName>().Result;
-                    System.Diagnostics.Debug.Write("Nombre de lugar: " + province.name);
+                    System.Diagnostics.Debug.Write("Nombre de lugar: " + province.name + "\n");
                     provinceName.name = province.name;
                     System.Diagnostics.Debug.Write("humidity: " + province.main.humidity);                    
                     province.main.humidity = province.main.humidity;

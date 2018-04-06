@@ -18,13 +18,39 @@
         </div><br /><br />
         <div style="width:80%; display: inline-block;" class="form-control">
             <label for="searchDate" id="label" style="width: 25%; float: left">Fecha  </label>                
-            <asp:TextBox type="date" runat="server" class="form-control" id="searchDate" style="width:25%;"/>            
+            <asp:TextBox type="date" runat="server" class="form-control" id="searchDate" style="width:25%;" AutoPostBack="true"/>            
             <asp:SqlDataSource ID="OperationsSQLConsult" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="SELECT [idOPERATION], [name] FROM [OPERATION]"></asp:SqlDataSource>
             <br />
-            <label for="searchDate" id="label" style="width: 25%; float: left">Operaciones</label>           
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="OperationsSQLConsult" style="width:25%;" 
+            <label for="searchDate" id="label" style="width: 25%; float: left">Operaciones</label>
+&nbsp;<asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="OperationsSQLConsult" style="width:25%;" AutoPostBack="true"
                 class="form-control" DataTextField="name" DataValueField="idOPERATION">
             </asp:DropDownList>            
         </div>
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="SqlHoursSample"
+            CssClass="table table-striped table-bordered table-hover">
+            <Columns>
+                <asp:BoundField DataField="hour" HeaderText="hour" SortExpression="hour" />
+                <asp:BoundField DataField="temperature" HeaderText="temperature" SortExpression="temperature" />
+                <asp:BoundField DataField="humidity" HeaderText="humidity" SortExpression="humidity" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlHoursSample" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="SELECT [hour], [temperature], [humidity] FROM [SAMPLE] WHERE ([hour] = @hour)">
+            <SelectParameters>
+                <asp:FormParameter FormField="searchDate.Text" Name="hour" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+        <asp:GridView ID="GridView2" runat="server" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="activity" HeaderText="activity" SortExpression="activity" />
+                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+                <asp:BoundField DataField="Cantidad Muestras" HeaderText="Cantidad Muestras" ReadOnly="True" SortExpression="Cantidad Muestras" />
+                <asp:BoundField DataField="alias" HeaderText="alias" SortExpression="alias" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SLOTH_SYSTEM_DB_TURRIALBA %>" SelectCommand="get_samples" SelectCommandType="StoredProcedure">
+            <SelectParameters>
+                <asp:FormParameter FormField="DropDownList1.Text" Name="fecha" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </div>
 </asp:Content>
